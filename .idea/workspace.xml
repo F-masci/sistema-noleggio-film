@@ -4,20 +4,88 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4e361a1-2ec8-45e0-a0af-0dfbecb777c4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SistemaNoleggioFilm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mariadb-java-client-3.3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="c4e361a1-2ec8-45e0-a0af-0dfbecb777c4" name="Changes" comment="First commit">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/runAllConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/functions/tokenize_string_list.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/grants/impiegato.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/grants/login.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/grants/proprietario.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/procedures/inserisciTurnoLavoro.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/procedures/modificaCarica.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/procedures/registraImpiegato.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/procedures/reportAnnuale.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/procedures/reportMensile.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/procedures/timbra.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/testProcedure.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/SistemaNoleggio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/bean/ChangeRoleBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/bean/LoginBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/bean/MonthlyReportBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/bean/RegisterEmployeeBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/bean/ReportBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/bean/WorkingHoursBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/bean/YearlyReportBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/ChangeRoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/ClockInOutController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/InsertWorkingHoursController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/MonthlyReportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/OwnerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/RegisterEmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/YearlyReportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/ChangeRoleProcedureDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/ClockInOutProcedureDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/InsertWorkingHoursProcedureDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/LoginProcedureDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/MonthlyReportProcedureDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/RegisterEmployeeProcedureDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/YearlyReportProcedureDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/ChangeRoleException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/ClockInOutException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/DaoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/InsertWorkingHoursException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/LoginException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/MonthlyReportException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/RegisterEmployeeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/YearlyReportException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/factory/ConnectionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/Report.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/WorkingHour.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/utility/LoggedUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/ChangeRoleView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/EmployeeView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/GenericView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/InsertWorkingHoursView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/LoginView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/OwnerView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RegisterEmployeeView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/ReportView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SistemaNoleggioFilm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SistemaNoleggioFilm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,34 +93,97 @@
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2bhHXBfkzzkOcYZ8sya9CyIC2jF" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.SistemaNoleggio.executor": "Run",
+    "Database Script.createFunctions.executor": "Run",
+    "Database Script.createProcedures.executor": "Run",
+    "Database Script.grantExecute.executor": "Run",
+    "Database Script.runAllConfig.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Program Files/Java/mariadb-java-client-3.3.1.jar",
+    "last_opened_file_path": "D:/OneDrive - Universita' degli Studi di Roma Tor Vergata/Università/Github/SistemaNoleggioFilm/sql/procedures/timbra.sql",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "D:/OneDrive - Universita' degli Studi di Roma Tor Vergata/Università/Github/SistemaNoleggioFilm/src/Main.java",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.31149426",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "mariadb"
+    ],
+    "RunConfigurationTargetLRU": [
+      "309ccba4-a859-4b5f-8670-6ca1d2acbb7c",
+      "309ccba4-a859-4b5f-8670-6ca1d2acbb7c/schema/\"sistema_noleggio\""
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="it.bd.sistema.noleggio.view" />
+      <recent name="it.bd.sistema.noleggio.exception" />
+      <recent name="it.bd.sistema.noleggio.dao" />
+      <recent name="it.bd.sistema.noleggio.controller" />
+      <recent name="it.bd.sistema.noleggio.bean" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SistemaNoleggio">
+    <configuration name="SistemaNoleggio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="it.bd.sistema.noleggio.SistemaNoleggio" />
+      <module name="SistemaNoleggioFilm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.bd.sistema.noleggio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.SistemaNoleggio" />
+      <item itemvalue="Database Script.runAllConfig" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SistemaNoleggio" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-249ae16d76d6-a618e4d4" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,22 +192,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706660433177</updated>
-      <workItem from="1706660434315" duration="382000" />
+      <workItem from="1706660434315" duration="3853000" />
+      <workItem from="1706664388836" duration="14345000" />
+      <workItem from="1706740077481" duration="24164000" />
     </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <option name="closed" value="true" />
+      <created>1706661033164</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706661033164</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
   </component>
 </project>

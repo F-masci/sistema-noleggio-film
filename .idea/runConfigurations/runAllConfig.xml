@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="runAllConfig" type="DatabaseScript" activateToolWindowBeforeRun="false">
+    <script-file value="$PROJECT_DIR$/sql/functions/tokenize_string_list.sql" />
+    <script-file value="$PROJECT_DIR$/sql/procedures/registraImpiegato.sql" />
+    <script-file value="$PROJECT_DIR$/sql/procedures/reportAnnuale.sql" />
+    <script-file value="$PROJECT_DIR$/sql/procedures/reportMensile.sql" />
+    <script-file value="$PROJECT_DIR$/sql/procedures/modificaCarica.sql" />
+    <script-file value="$PROJECT_DIR$/sql/procedures/login.sql" />
+    <script-file value="$PROJECT_DIR$/sql/procedures/inserisciTurnoLavoro.sql" />
+    <script-file value="$PROJECT_DIR$/sql/procedures/timbra.sql" />
+    <script-file value="$PROJECT_DIR$/sql/grants/proprietario.sql" />
+    <script-file value="$PROJECT_DIR$/sql/grants/impiegato.sql" />
+    <script-file value="$PROJECT_DIR$/sql/grants/login.sql" />
+    <script-mode>FILE</script-mode>
+    <data-source id="309ccba4-a859-4b5f-8670-6ca1d2acbb7c" namespace="schema/&quot;sistema_noleggio&quot;" />
+    <method v="2" />
+  </configuration>
+</component>
