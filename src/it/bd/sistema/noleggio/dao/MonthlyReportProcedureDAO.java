@@ -16,12 +16,13 @@ import java.util.List;
 
 public class MonthlyReportProcedureDAO {
 
-    public List<Report> monthlyReport(int month) throws DaoException {
+    public List<Report> monthlyReport(int year, int month) throws DaoException {
         List<Report> reports = new ArrayList<>();
         try {
             Connection conn = ConnectionFactory.getConnection();
-            CallableStatement cs = conn.prepareCall("{call reportMensile(?)}");
+            CallableStatement cs = conn.prepareCall("{call reportMensile(?,?)}");
             cs.setInt(1, month);
+            cs.setInt(2, year);
             if(cs.execute()) {
 
                 ResultSet rs = cs.getResultSet();

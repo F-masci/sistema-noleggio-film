@@ -1,5 +1,6 @@
 package it.bd.sistema.noleggio.view;
 
+import it.bd.sistema.noleggio.exception.cli.ContinueCliException;
 import it.bd.sistema.noleggio.exception.cli.EscCliException;
 import it.bd.sistema.noleggio.exception.cli.SelectionNotValidException;
 
@@ -26,7 +27,7 @@ public abstract class GenericView {
         System.out.print(msg);
     }
 
-    public static int printMenu(String menu, int numSelection) throws EscCliException {
+    public static int printMenu(String menu, int numSelection) throws EscCliException, ContinueCliException {
         int selection;
         println(menu);
         while(true) {
@@ -45,15 +46,16 @@ public abstract class GenericView {
         println("Operazione effettuata correttamente");
     }
 
-    protected static String requestString() throws EscCliException {
+    protected static String requestString() throws EscCliException, ContinueCliException {
         return requestString(null);
     }
-    protected static String requestString(String msg) throws EscCliException {
+    protected static String requestString(String msg) throws EscCliException, ContinueCliException {
         String res = null;
         try {
             if(msg != null) print(msg);
             res = br.readLine();
             if (res.equals("esc")) throw new EscCliException();
+            if (res.equals("fine")) throw new ContinueCliException();
         } catch (IOException e) {
             showErrorMessage(e);
             System.exit(-1);
@@ -61,10 +63,10 @@ public abstract class GenericView {
         return res;
     }
 
-    protected static int requestInt() throws EscCliException {
+    protected static int requestInt() throws EscCliException, ContinueCliException {
         return requestInt(null);
     }
-    protected static int requestInt(String msg) throws EscCliException {
+    protected static int requestInt(String msg) throws EscCliException, ContinueCliException {
         while (true) {
             try {
                 return Integer.parseInt(requestString(msg));
@@ -74,13 +76,26 @@ public abstract class GenericView {
         }
     }
 
-    protected static long requestLong() throws EscCliException {
+    protected static long requestLong() throws EscCliException, ContinueCliException {
         return requestLong(null);
     }
-    protected static long requestLong(String msg) throws EscCliException {
+    protected static long requestLong(String msg) throws EscCliException, ContinueCliException {
         while (true) {
             try {
                 return Long.parseLong(requestString(msg));
+            } catch (NumberFormatException e) {
+                showErrorMessage("L'input inserito non è un numero");
+            }
+        }
+    }
+
+    protected static float requestFloat() throws EscCliException, ContinueCliException {
+        return requestFloat(null);
+    }
+    protected static float requestFloat(String msg) throws EscCliException, ContinueCliException {
+        while (true) {
+            try {
+                return Float.parseFloat(requestString(msg));
             } catch (NumberFormatException e) {
                 showErrorMessage("L'input inserito non è un numero");
             }

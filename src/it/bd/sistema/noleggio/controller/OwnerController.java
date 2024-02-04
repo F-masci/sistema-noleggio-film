@@ -18,10 +18,24 @@ public class OwnerController implements Controller {
 
                 switch (selection) {
                     case 1 -> controller = new RegisterEmployeeController();
-                    case 2 -> controller = new ChangeRoleController();
-                    case 3 -> controller = new InsertWorkingHoursController();
-                    case 4 -> controller = new MonthlyReportController();
-                    case 5 -> controller = new YearlyReportController();
+                    case 2 -> controller = new EmployeeListController();
+                    case 3 -> controller = new RemoveEmployeeController();
+                    case 4 -> controller = new ChangeRoleController();
+                    case 5 -> controller = new RoleListController();
+                    case 6 -> controller = new InsertWorkingHoursController();
+                    case 7 -> controller = new WorkingHoursListController();
+                    case 8 -> controller = new RemoveWorkingHoursController();
+                    case 9 -> controller = new MonthlyReportController();
+                    case 10 -> controller = new YearlyReportController();
+                    case 11 -> controller = new InsertFilmController();
+                    case 12 -> controller = new FilmListController();
+                    case 13 -> controller = new RemoveFilmController();
+                    case 14 -> controller = new InsertSectorController();
+                    case 15 -> controller = new SectorListController();
+                    case 16 -> controller = new RemoveSectorController();
+                    case 17 -> controller = new InsertFilmCopyController();
+                    case 18 -> controller = new FilmCopyListController();
+                    case 19 -> controller = new RemoveFilmCopyController();
                     default -> throw new SelectionNotValidException();
                 }
 

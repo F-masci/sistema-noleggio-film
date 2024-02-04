@@ -13,7 +13,7 @@ public class EmployeeController implements Controller {
 
         while(true) {
             try {
-                int selection = EmployeeView.printOwnerMenu();
+                int selection = EmployeeView.printEmployeeMenu();
 
                 switch (selection) {
                     case 1 -> controller = new ClockInOutController();

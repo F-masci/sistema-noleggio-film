@@ -1,6 +1,6 @@
 package it.bd.sistema.noleggio.factory;
 
-import it.bd.sistema.noleggio.model.Role;
+import it.bd.sistema.noleggio.model.RoleType;
 import it.bd.sistema.noleggio.view.GenericView;
 
 import java.io.FileInputStream;
@@ -39,7 +39,7 @@ public class ConnectionFactory {
         return connection;
     }
 
-    public static void changeRole(Role role) {
+    public static void changeRole(RoleType role) {
         try {
 
             connection.close();

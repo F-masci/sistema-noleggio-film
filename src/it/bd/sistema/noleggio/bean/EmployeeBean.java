@@ -1,20 +1,22 @@
 package it.bd.sistema.noleggio.bean;
 
-public class RegisterEmployeeBean {
+public class EmployeeBean {
 
     private final String username;
     private final String password;
     private final String role;
     private final String startDate;
-
     private final String cf;
     private final String name;
     private final long phone;
 
-    public RegisterEmployeeBean(String cf) {
+    public EmployeeBean(String cf) {
         this(null, null, null, null, cf, null, 0);
     }
-    public RegisterEmployeeBean(String username, String password, String role, String startDate, String cf, String name, long phone) {
+    public EmployeeBean(String username, String role, String cf, String name, long phone) {
+        this(username, null, role, null, cf, name, phone);
+    }
+    public EmployeeBean(String username, String password, String role, String startDate, String cf, String name, long phone) {
         this.username = username;
         this.password = password;
         this.role = role;

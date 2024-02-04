@@ -10,6 +10,9 @@ public class WorkingHoursBean {
     private final List<Integer> days;
     private final List<String> hours;
 
+    public WorkingHoursBean(String employee, int year, int month) {
+        this(employee, year, month, null, null);
+    }
     public WorkingHoursBean(String employee, int year, int month, List<Integer> days, List<String> hours) {
         this.employee = employee;
         this.year = year;

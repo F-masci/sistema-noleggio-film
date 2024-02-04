@@ -18,8 +18,9 @@ public class MonthlyReportController implements Controller {
         while(true) {
             try {
                 int month = ReportView.monthlyReport();
+                int year = ReportView.yearlyReport();
                 MonthlyReportProcedureDAO dao = new MonthlyReportProcedureDAO();
-                List<Report> reports = dao.monthlyReport(month);
+                List<Report> reports = dao.monthlyReport(year, month);
                 List<ReportBean> bean = new ArrayList<ReportBean>();
                 for (Report r : reports) {
                     bean.add(new MonthlyReportBean(

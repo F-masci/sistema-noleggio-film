@@ -1,26 +1,39 @@
 package it.bd.sistema.noleggio.model;
 
-public enum Role {
-    OWNER("Proprietario"), CASHIER("Cassiere"), EMPLOYEE("Impiegato");
+public class Role {
 
-    private final String role;
-    Role(String role) {
+    private final Employee employee;
+    private final String start;
+    private final String end;
+    private final RoleType role;
+
+    public Role(String start, String end, RoleType role) {
+        this(null, start, end, role);
+    }
+    public Role(Employee employee) {
+        this(employee, null, null, null);
+    }
+    public Role(Employee employee, String start, String end, RoleType role) {
+        this.employee = employee;
+        this.start = start;
+        this.end = end;
         this.role = role;
     }
 
-    public String getConnectionRole() {
-        return role.toLowerCase();
+    public Employee getEmployee() {
+        return employee;
     }
 
-    public String getRole() {
+    public String getStart() {
+        return start;
+    }
+
+    public String getEnd() {
+        return end;
+    }
+
+    public RoleType getRole() {
         return role;
     }
 
-    public static Role createFromString(String role) {
-        return switch (role) {
-            case "Proprietario" -> OWNER;
-            case "Cassiere" -> CASHIER;
-            default -> EMPLOYEE;
-        };
-    }
 }

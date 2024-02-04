@@ -3,9 +3,9 @@ package it.bd.sistema.noleggio.model;
 public class User {
 
     private final String username;
-    private final Role role;
+    private final RoleType role;
 
-    public User(String username, Role role) {
+    public User(String username, RoleType role) {
         this.username = username;
         this.role = role;
     }
@@ -15,7 +15,7 @@ public class User {
         return username;
     }
 
-    public Role getRole() {
+    public RoleType getRole() {
         return role;
     }
 }

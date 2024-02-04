@@ -1,7 +1,6 @@
 package it.bd.sistema.noleggio.view;
 
 import it.bd.sistema.noleggio.bean.ChangeRoleBean;
-import it.bd.sistema.noleggio.bean.RegisterEmployeeBean;
 import it.bd.sistema.noleggio.exception.cli.EscCliException;
 
 public class ChangeRoleView extends GenericView {

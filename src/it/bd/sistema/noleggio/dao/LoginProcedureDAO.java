@@ -4,7 +4,7 @@ import it.bd.sistema.noleggio.exception.DaoException;
 import it.bd.sistema.noleggio.exception.LoginException;
 import it.bd.sistema.noleggio.factory.ConnectionFactory;
 import it.bd.sistema.noleggio.model.Employee;
-import it.bd.sistema.noleggio.model.Role;
+import it.bd.sistema.noleggio.model.RoleType;
 import it.bd.sistema.noleggio.model.User;
 
 import java.sql.CallableStatement;
@@ -16,7 +16,7 @@ public class LoginProcedureDAO {
 
 
     public User execute(String username, String password) throws DaoException {
-        Role role;
+        RoleType role;
         String employee;
         try {
             Connection conn = ConnectionFactory.getConnection();
@@ -26,13 +26,13 @@ public class LoginProcedureDAO {
             cs.registerOutParameter(3, Types.VARCHAR);
             cs.registerOutParameter(4, Types.VARCHAR);
             cs.executeQuery();
-            role = Role.createFromString(cs.getString(3));
+            role = RoleType.createFromString(cs.getString(3));
             employee = cs.getString(4);
         } catch(SQLException e) {
             throw new LoginException(e);
         }
 
-        if(role == Role.OWNER) return new User(username, role);
+        if(role == RoleType.OWNER) return new User(username, role);
         else return new Employee(username, role, employee);
     }
 }

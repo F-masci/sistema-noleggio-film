@@ -1,6 +1,6 @@
 package it.bd.sistema.noleggio.controller;
 
-import it.bd.sistema.noleggio.bean.RegisterEmployeeBean;
+import it.bd.sistema.noleggio.bean.EmployeeBean;
 import it.bd.sistema.noleggio.dao.RegisterEmployeeProcedureDAO;
 import it.bd.sistema.noleggio.exception.DaoException;
 import it.bd.sistema.noleggio.exception.cli.EscCliException;
@@ -12,7 +12,7 @@ public class RegisterEmployeeController implements Controller {
     public void start() {
         while(true) {
             try {
-                RegisterEmployeeBean bean = RegisterEmployeeView.registerEmployee();
+                EmployeeBean bean = RegisterEmployeeView.registerEmployee();
                 RegisterEmployeeProcedureDAO dao = new RegisterEmployeeProcedureDAO();
                 dao.registerEmployee(
                         bean.getUsername(),

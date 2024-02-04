@@ -10,6 +10,8 @@ begin
     declare var_hours CHAR(17); -- Contiene gli orari del tipo 00:00-00:00
     declare var_start_hour TIME; -- Contiene gli orari del tipo 00:00
     declare var_end_hour TIME; -- Contiene gli orari del tipo 00:00
+
+    declare var_check TINYINT; -- Mantiene il controllo per capire se il turno di quel mese è stato già inserito o meno
     
     declare exit handler for sqlexception
     begin
@@ -19,9 +21,18 @@ begin
     end;
 
     set autocommit=0;
-    set transaction isolation level read uncommitted;
+    set transaction isolation level serializable;
 
     start transaction;
+
+    /**
+      * Il controllo viene eseguito all'interno della procedura e non attraverso un trigger poiché in questo modo lo statement di SELECT viene eseguito una sola volta
+      * anziché per ogni riga inserita nella tabella
+      */
+    SELECT count(*) FROM turno_lavoro WHERE extract(month from data) = var_month AND extract(year from data) = var_year AND impiegato = var_employee INTO var_check;
+    if var_check > 0 then
+        signal sqlstate '45000' set message_text = 'Turno di lavoro già presente';
+    end if;
 
     set var_counter = 1;
     insert_loop: loop

@@ -6,11 +6,14 @@ public class Employee extends User {
     private final String name;
     private final long phone;
 
-    public Employee(String username, Role role, String cf) {
+    public Employee(String username, RoleType role, String cf) {
         this(cf, null, 0, role);
     }
-    public Employee(String cf, String name, long phone, Role role) {
-        super(null, role);
+    public Employee(String cf, String name, long phone, RoleType role) {
+        this(null, cf, name, phone, role);
+    }
+    public Employee(String username, String cf, String name, long phone, RoleType role) {
+        super(username, role);
         this.cf = cf;
         this.name = name;
         this.phone = phone;

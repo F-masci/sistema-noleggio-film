@@ -1,6 +1,7 @@
 package it.bd.sistema.noleggio.dao;
 
 import it.bd.sistema.noleggio.exception.DaoException;
+import it.bd.sistema.noleggio.exception.InsertWorkingHoursException;
 import it.bd.sistema.noleggio.exception.RegisterEmployeeException;
 import it.bd.sistema.noleggio.factory.ConnectionFactory;
 import it.bd.sistema.noleggio.model.Employee;
@@ -32,7 +33,7 @@ public class InsertWorkingHoursProcedureDAO {
             cs.setString(5, list_hours.toString());
             cs.execute();
         } catch(SQLException e) {
-            throw new RegisterEmployeeException(e);
+            throw new InsertWorkingHoursException(e);
         }
     }
 

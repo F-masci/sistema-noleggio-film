@@ -4,7 +4,6 @@ import it.bd.sistema.noleggio.exception.DaoException;
 import it.bd.sistema.noleggio.exception.RegisterEmployeeException;
 import it.bd.sistema.noleggio.factory.ConnectionFactory;
 import it.bd.sistema.noleggio.model.Employee;
-import it.bd.sistema.noleggio.model.Role;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
