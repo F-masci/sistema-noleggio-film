@@ -18,10 +18,10 @@ begin
     set var_start_date = var_end_date + INTERVAL 1 day;
 
     start transaction;
-    SELECT mansione FROM carica_attuale WHERE impiegato = var_employee;
+    SELECT mansione FROM carica WHERE impiegato = var_employee AND fine IS NULL INTO var_current_role;
     if var_current_role = var_role
     then
-        signal sqlstate '45000' set message_text = "La nuova mansione deve essere differente da quella precendete";
+        signal sqlstate '45000' set message_text = 'La nuova mansione deve essere differente da quella precedente';
     end if;
 
     UPDATE carica SET fine = var_end_date WHERE impiegato = var_employee AND fine IS NULL;
