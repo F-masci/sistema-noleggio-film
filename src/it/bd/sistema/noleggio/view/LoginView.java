@@ -14,8 +14,8 @@ public class LoginView extends GenericView {
                 Esegui il login per accedere al sistema""");
         //String username = requestString("Username: ");
         //String password = requestString("Password: ");
-        String username = "proprietario";
-        String password = "proprietario";
+        String username = "francesco";
+        String password = "francesco";
         return new LoginBean(username, password);
     }
 

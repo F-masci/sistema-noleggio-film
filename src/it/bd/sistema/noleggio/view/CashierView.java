@@ -12,10 +12,13 @@ public class CashierView extends GenericView {
             Seleziona cosa vuoi fare
             [1] Timbra
             [2] Registra cliente
-            [3] Inserisci recapito cliente
-            [4] Registra noleggio
-            [5] Registra restituzione
-            [6] Lista noleggi scaduti""", 6);
+            [3] Lista clienti
+            [4] Rimuovi cliente
+            [5] Inserisci recapito cliente
+            [6] Rimuovi recapito cliente
+            [7] Registra noleggio
+            [8] Registra restituzione
+            [9] Lista noleggi""", 9);
     }
 
 }

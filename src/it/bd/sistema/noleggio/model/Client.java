@@ -28,6 +28,9 @@ public class Client {
     public Client(String cf, String name, String surname, String birthDate, Address address, List<String> emails, List<Long> phones, List<Long> mobilePhones) {
         this(-1, cf, name, surname, birthDate, address, emails, phones, mobilePhones);
     }
+    public Client(int card, String cf, String name, String surname, String birthDate, Address address) {
+        this(card, cf, name, surname, birthDate, address, null, null, null);
+    }
     public Client(int card, String cf, String name, String surname, String birthDate, Address address, List<String> emails, List<Long> phones, List<Long> mobilePhones) {
         this.card = card;
         this.cf = cf;

@@ -2,14 +2,23 @@
   <configuration default="false" name="runAllConfig" type="DatabaseScript" activateToolWindowBeforeRun="false">
     <script-file value="$PROJECT_DIR$/sql/functions/tokenize_string_list.sql" />
     <script-file value="$PROJECT_DIR$/sql/procedures/_inserisciRecapitiClienti.sql" />
+    <script-file value="$PROJECT_DIR$/sql/procedures/inserisciCopiaFilm.sql" />
     <script-file value="$PROJECT_DIR$/sql/procedures/inserisciFilm.sql" />
     <script-file value="$PROJECT_DIR$/sql/procedures/inserisciRecapitiCliente.sql" />
     <script-file value="$PROJECT_DIR$/sql/procedures/inserisciSettore.sql" />
     <script-file value="$PROJECT_DIR$/sql/procedures/inserisciTurnoLavoro.sql" />
-    <script-file value="$PROJECT_DIR$/sql/procedures/listaNoleggi.sql" />
+    <script-file value="$PROJECT_DIR$/sql/procedures/listaCariche.sql" />
+    <script-file value="$PROJECT_DIR$/sql/procedures/listaClienti.sql" />
+    <script-file value="$PROJECT_DIR$/sql/procedures/listaCopieFilm.sql" />
+    <script-file value="$PROJECT_DIR$/sql/procedures/listaFilm.sql" />
+    <script-file value="$PROJECT_DIR$/sql/procedures/listaImpiegati.sql" />
+    <script-file value="$PROJECT_DIR$/sql/procedures/listaNoleggiCliente.sql" />
+    <script-file value="$PROJECT_DIR$/sql/procedures/listaNoleggiCopiaFilm.sql" />
     <script-file value="$PROJECT_DIR$/sql/procedures/listaNoleggiCorrenti.sql" />
+    <script-file value="$PROJECT_DIR$/sql/procedures/listaNoleggiFilm.sql" />
     <script-file value="$PROJECT_DIR$/sql/procedures/listaNoleggiScaduti.sql" />
-    <script-file value="$PROJECT_DIR$/sql/procedures/listaTurniCompletati.sql" />
+    <script-file value="$PROJECT_DIR$/sql/procedures/listaSettori.sql" />
+    <script-file value="$PROJECT_DIR$/sql/procedures/listaTurni.sql" />
     <script-file value="$PROJECT_DIR$/sql/procedures/login.sql" />
     <script-file value="$PROJECT_DIR$/sql/procedures/modificaCarica.sql" />
     <script-file value="$PROJECT_DIR$/sql/procedures/registraCliente.sql" />
@@ -22,7 +31,7 @@
     <script-file value="$PROJECT_DIR$/sql/procedures/rimuoviCopiaFilm.sql" />
     <script-file value="$PROJECT_DIR$/sql/procedures/rimuoviFilm.sql" />
     <script-file value="$PROJECT_DIR$/sql/procedures/rimuoviImpiegato.sql" />
-    <script-file value="$PROJECT_DIR$/sql/procedures/listaFilm.sql" />
+    <script-file value="$PROJECT_DIR$/sql/procedures/rimuoviRecapitiCliente.sql" />
     <script-file value="$PROJECT_DIR$/sql/procedures/rimuoviSettore.sql" />
     <script-file value="$PROJECT_DIR$/sql/procedures/rimuoviTurnoLavoro.sql" />
     <script-file value="$PROJECT_DIR$/sql/procedures/timbra.sql" />

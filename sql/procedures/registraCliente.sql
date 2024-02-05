@@ -24,7 +24,7 @@ begin
     set var_card = last_insert_id();
     call _inserisciRecapitiCliente(var_card, var_mobile_phones, var_emails, var_phones, var_affected_rows);
     if var_affected_rows <= 0 then
-        signal sqlstate '45000' set message_text = 'devi inserire almeno un recapito';
+        signal sqlstate '45000' set message_text = 'Il cliente deve avere almeno un recapito';
     end if;
     commit;
     set autocommit=1;

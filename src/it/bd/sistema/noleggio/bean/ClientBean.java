@@ -4,6 +4,7 @@ import java.util.List;
 
 public class ClientBean {
 
+    private final int card;
     private final String cf;
     private final String name;
     private final String surname;
@@ -15,7 +16,8 @@ public class ClientBean {
     private List<Long> phones;
     private  List<Long> mobilePhones;
 
-    public ClientBean(String cf, String name, String surname, String birthDate, String address, int cap, int number, List<String> emails, List<Long> phones, List<Long> mobilePhones) {
+    public ClientBean(int card, String cf, String name, String surname, String birthDate, String address, int cap, int number, List<String> emails, List<Long> phones, List<Long> mobilePhones) {
+        this.card = card;
         this.cf = cf;
         this.name = name;
         this.surname = surname;
@@ -29,11 +31,19 @@ public class ClientBean {
     }
 
     public ClientBean(String cf, String name, String surname, String birthDate, String address, int cap, int number) {
-        this(cf, name, surname, birthDate, address, cap, number, null, null, null);
+        this(-1, cf, name, surname, birthDate, address, cap, number, null, null, null);
     }
 
     public ClientBean(List<String> emails, List<Long> phones, List<Long> mobilePhones) {
-        this(null, null, null, null, null, -1, -1, emails, phones, mobilePhones);
+        this(-1, null, null, null, null, null, -1, -1, emails, phones, mobilePhones);
+    }
+
+    public ClientBean(int card) {
+        this(card, null, null, null, null, null, -1, -1, null, null, null);
+    }
+
+    public int getCard() {
+        return card;
     }
 
     public String getCf() {

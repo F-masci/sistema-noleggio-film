@@ -1,0 +1,51 @@
+package it.bd.sistema.noleggio.view;
+
+import it.bd.sistema.noleggio.bean.ClientBean;
+import it.bd.sistema.noleggio.exception.cli.ContinueCliException;
+import it.bd.sistema.noleggio.exception.cli.EscCliException;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class RemoveClientAddressView extends GenericView {
+
+    public static ClientBean selectClient() throws EscCliException {
+        println("Digitare esc durante l'inserimento per uscire");
+        return new ClientBean(
+                requestInt("Cliente: ")
+        );
+    }
+
+    public static ClientBean removeClientAdress() throws EscCliException {
+
+        println("\nDurante l'inserimento dei recapiti digitare la parola 'fine' per terminare l'inserimento\n");
+
+        List<String> emails = new ArrayList<>();
+
+        try {
+            while (true) {
+                emails.add(requestString("Email: "));
+            }
+        } catch(ContinueCliException ignored) {}
+
+        List<Long> phones = new ArrayList<>();
+
+        try {
+            while (true) {
+                phones.add(requestLong("Telefono: "));
+            }
+        } catch(ContinueCliException ignored) {}
+
+        List<Long> mobilePhones = new ArrayList<>();
+
+        try {
+            while (true) {
+                mobilePhones.add(requestLong("Cellulare: "));
+            }
+        } catch(ContinueCliException ignored) {}
+
+        return new ClientBean(emails, phones, mobilePhones);
+
+    }
+
+}

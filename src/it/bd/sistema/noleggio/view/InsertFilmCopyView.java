@@ -2,11 +2,12 @@ package it.bd.sistema.noleggio.view;
 
 import it.bd.sistema.noleggio.bean.FilmBean;
 import it.bd.sistema.noleggio.bean.FilmCopyBean;
+import it.bd.sistema.noleggio.exception.cli.EscCliException;
 import it.bd.sistema.noleggio.model.FilmCopyType;
 
 public class InsertFilmCopyView extends GenericView {
 
-    public static FilmCopyBean insertFilmCopy() {
+    public static FilmCopyBean insertFilmCopy() throws EscCliException {
         println("Digitare esc durante l'inserimento per uscire");
         return new FilmCopyBean(
                 requestInt("Codice: "),

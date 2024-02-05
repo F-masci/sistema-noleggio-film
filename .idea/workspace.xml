@@ -5,153 +5,73 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4e361a1-2ec8-45e0-a0af-0dfbecb777c4" name="Changes" comment="Owner client completed">
-      <change afterPath="$PROJECT_DIR$/sql/grants/cassiere.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/procedures/_inserisciRecapitiClienti.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/procedures/inserisciCopiaFilm.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/procedures/inserisciFilm.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/procedures/inserisciRecapitiCliente.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/procedures/inserisciSettore.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/procedures/listaCariche.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/procedures/listaCopieFilm.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/procedures/listaFilm.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/procedures/listaImpiegati.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/procedures/listaNoleggi.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/procedures/listaNoleggiCorrenti.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/procedures/listaNoleggiScaduti.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/procedures/listaSettori.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/procedures/listaTurni.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/procedures/registraCliente.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/procedures/registraNoleggio.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/procedures/registraRestituzione.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/procedures/rimuoviCliente.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/procedures/rimuoviCopiaFilm.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/procedures/rimuoviFilm.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/procedures/rimuoviImpiegato.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/procedures/rimuoviSettore.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/procedures/rimuoviTurnoLavoro.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/bean/ClientBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/bean/ExpiredRentalBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/bean/FilmBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/bean/FilmCopyBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/bean/RentalBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/bean/RoleBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/CashierController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/EmployeeListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/ExpiredRentalListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/FilmCopyListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/FilmListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/InsertClientAddressController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/InsertFilmController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/InsertFilmCopyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/InsertSectorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/RegisterClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/RegisterRentalController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/RegisterReturnController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/RemoveEmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/RemoveFilmController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/RemoveFilmCopyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/RemoveSectorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/RemoveWorkingHoursController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/RoleListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/SectorListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/WorkingHoursListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/EmployeeListProcedureDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/ExpiredRentalListProcedureDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/FilmCopyListProcedureDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/FilmListProcedureDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/InsertClientAddressProcedureDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/InsertFilmCopyProcedureDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/InsertFilmProcedureDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/InsertSectorProcedureDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/RegisterClientProcedureDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/RegisterRentalProcedureDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/RegisterReturnProcedureDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/RemoveEmployeeProcedureDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/RemoveFilmCopyProcedureDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/RemoveFilmProcedureDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/RemoveSectorProcedureDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/RemoveWorkingHoursProcedureDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/RoleListProcedureDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/SectorListProcedureDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/WorkingHoursListProcedureDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/EmployeeListException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/ExpiredRentalListException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/FilmCopyListException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/FilmListException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/InsertClientAddressException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/InsertFilmCopyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/InsertFilmException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/InsertSectorException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/RegisterClientException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/RegisterRentalException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/RegisterReturnException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/RemoveEmployeeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/RemoveFilmCopyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/RemoveFilmException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/RemoveSectorException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/RemoveWorkingHoursException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/RoleListException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/SectorListException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/WorkingHoursListException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/cli/ContinueCliException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/Film.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/FilmCopy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/FilmCopyType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/Rental.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/RoleType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/utility/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/utility/FormatListProcedure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/utility/Price.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/CashierView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/EmployeeListView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/ExpiredRentalListView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/FilmCopyListView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/FilmListView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/InsertClientAddressView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/InsertFilmCopyView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/InsertFilmView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/InsertSectorView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RegisterClientView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RegisterRentalView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RegisterReturnView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RemoveEmployeeView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RemoveFilmCopyView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RemoveFilmView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RemoveSectorView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RemoveWorkingHoursView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RoleListView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/SectorListView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/WorkingHoursListView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/procedures/listaClienti.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/procedures/listaNoleggiCliente.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/procedures/listaNoleggiCopiaFilm.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/procedures/listaNoleggiFilm.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/procedures/rimuoviRecapitiCliente.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/ClientListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/ClientRentalListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/CurrentRentalListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/FilmCopyRentalListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/FilmRentalListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/GenericRentalListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/RemoveClientAddressController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/RemoveClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/RentalListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/ClientListProcedureDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/ClientRentalListProcedureDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/CurrentRentalListProcedureDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/FilmCopyRentalListProcedureDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/FilmRentalListProcedureDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/GenericRentalListProcedureDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/RemoveClientAddressProcedureDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/RemoveClientProcedureDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/ClientListException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/ClientRentalListException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/CurrentRentalListException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/FilmCopyRentalListException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/FilmRentalListException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/RemoveClientAddressException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/RemoveClientException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/ClientListView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/ClientRentalListView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/CurrentRentalListView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/FilmCopyRentalListView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/FilmRentalListView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/GenericRentalListView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RemoveClientAddressView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RemoveClientView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RentalListView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/runAllConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/runAllConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/grants/impiegato.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/grants/impiegato.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/grants/login.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/grants/login.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/grants/cassiere.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/grants/cassiere.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/grants/proprietario.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/grants/proprietario.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/procedures/inserisciTurnoLavoro.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/inserisciTurnoLavoro.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/procedures/reportMensile.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/reportMensile.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/testProcedure.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/testProcedure.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/bean/RegisterEmployeeBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/bean/EmployeeBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/bean/WorkingHoursBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/bean/WorkingHoursBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/MonthlyReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/MonthlyReportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/OwnerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/OwnerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/RegisterEmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/RegisterEmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/ChangeRoleProcedureDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/ChangeRoleProcedureDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/ClockInOutProcedureDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/ClockInOutProcedureDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/InsertWorkingHoursProcedureDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/InsertWorkingHoursProcedureDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/LoginProcedureDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/LoginProcedureDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/MonthlyReportProcedureDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/MonthlyReportProcedureDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/factory/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/factory/ConnectionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/ChangeRoleView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/ChangeRoleView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/EmployeeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/EmployeeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/GenericView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/GenericView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/OwnerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/OwnerView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RegisterEmployeeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RegisterEmployeeView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/_inserisciRecapitiClienti.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/_inserisciRecapitiClienti.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/listaNoleggi.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/listaNoleggiCorrenti.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/listaNoleggiCorrenti.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/listaNoleggiScaduti.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/listaNoleggiScaduti.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/modificaCarica.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/modificaCarica.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/registraCliente.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/registraCliente.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/registraNoleggio.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/registraNoleggio.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/reportAnnuale.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/reportAnnuale.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/bean/ClientBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/bean/ClientBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/bean/ExpiredRentalBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/bean/RentalListBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/CashierController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/CashierController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/ExpiredRentalListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/ExpiredRentalListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/FilmListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/FilmListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/ExpiredRentalListProcedureDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/dao/ExpiredRentalListProcedureDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/Rental.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/Rental.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/CashierView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/CashierView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/ExpiredRentalListView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/ExpiredRentalListView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/InsertFilmCopyView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/InsertFilmCopyView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/InsertFilmView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/InsertFilmView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/LoginView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RegisterClientView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RegisterClientView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RemoveFilmCopyView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RemoveFilmCopyView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RemoveFilmView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RemoveFilmView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RoleListView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RoleListView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +124,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/OneDrive - Universita' degli Studi di Roma Tor Vergata/Università/Github/SistemaNoleggioFilm/sql/procedures",
+    "last_opened_file_path": "D:/OneDrive - Universita' degli Studi di Roma Tor Vergata/Università/Github/SistemaNoleggioFilm/sql/grants/proprietario.sql",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -236,13 +156,13 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="it.bd.sistema.noleggio.controller" />
-      <recent name="it.bd.sistema.noleggio.model" />
       <recent name="it.bd.sistema.noleggio.dao" />
       <recent name="it.bd.sistema.noleggio.exception" />
       <recent name="it.bd.sistema.noleggio.view" />
+      <recent name="it.bd.sistema.noleggio.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SistemaNoleggio">
+  <component name="RunManager" selected="Database Script.runAllConfig">
     <configuration name="SistemaNoleggio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="it.bd.sistema.noleggio.SistemaNoleggio" />
       <module name="SistemaNoleggioFilm" />
@@ -308,7 +228,8 @@
       <workItem from="1706845169137" duration="5307000" />
       <workItem from="1706915546706" duration="14606000" />
       <workItem from="1706930215558" duration="3627000" />
-      <workItem from="1707002872781" duration="16256000" />
+      <workItem from="1707002872781" duration="19100000" />
+      <workItem from="1707091787435" duration="10283000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -326,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706764540490</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Owner client completed">
+      <option name="closed" value="true" />
+      <created>1707022282412</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707022282412</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

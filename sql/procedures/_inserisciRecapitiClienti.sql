@@ -9,6 +9,8 @@ begin
     declare var_counter INT;
     declare var_aux TEXT;
 
+    set var_affected_rows = 0;
+
     -- CELLULARE
 
     set var_counter = 1;
@@ -19,6 +21,7 @@ begin
             leave insert_mobile_phones_loop;
         end if;
         INSERT INTO cellulare(cellulare, cliente) VALUES (var_aux, var_client);
+        set var_affected_rows = var_affected_rows+1;
         set var_counter = var_counter+1;
     end loop;
 
@@ -32,6 +35,7 @@ begin
             leave insert_emails_loop;
         end if;
         INSERT INTO email(email, cliente) VALUES (var_aux, var_client);
+        set var_affected_rows = var_affected_rows+1;
         set var_counter = var_counter+1;
     end loop;
 
@@ -45,9 +49,8 @@ begin
             leave insert_phones_loop;
         end if;
         INSERT INTO telefono(telefono, cliente) VALUES (var_aux, var_client);
+        set var_affected_rows = var_affected_rows+1;
         set var_counter = var_counter+1;
     end loop;
-
-    SELECT ROW_COUNT() INTO var_affected_rows;
 
 end

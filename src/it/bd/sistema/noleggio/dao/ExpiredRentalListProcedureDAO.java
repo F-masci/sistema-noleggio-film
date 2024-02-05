@@ -1,6 +1,7 @@
 package it.bd.sistema.noleggio.dao;
 
 import it.bd.sistema.noleggio.exception.DaoException;
+import it.bd.sistema.noleggio.exception.ExpiredRentalListException;
 import it.bd.sistema.noleggio.exception.MonthlyReportException;
 import it.bd.sistema.noleggio.factory.ConnectionFactory;
 import it.bd.sistema.noleggio.model.*;
@@ -12,43 +13,23 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ExpiredRentalListProcedureDAO {
+public class ExpiredRentalListProcedureDAO  extends GenericRentalListProcedureDAO{
 
-    public List<Rental> expiredReturnList() throws DaoException {
+    @Override
+    public List<Rental> rentalList(Object... objects) throws DaoException {
         List<Rental> rentals = new ArrayList<>();
         try {
             Connection conn = ConnectionFactory.getConnection();
             CallableStatement cs = conn.prepareCall("{call listaNoleggiScaduti()}");
             if(cs.execute()) {
-
                 ResultSet rs = cs.getResultSet();
                 while (rs.next()) {
-                    Client client = new Client(
-                            rs.getInt("tessera"),
-                            rs.getString("codice_fiscale"),
-                            rs.getString("nome"),
-                            rs.getString("cognome")
-                    );
-                    Film film = new Film(
-                            rs.getString("titolo"),
-                            rs.getString("regista")
-                    );
-                    FilmCopy copy = new FilmCopy(
-                            rs.getInt("codice"),
-                            film,
-                            FilmCopyType.createFromString(rs.getString("tipo"))
-                    );
-                    rentals.add(new Rental(
-                            client,
-                            copy,
-                            rs.getString("scadenza")
-                    ));
+                    rentals.add(super.createRentalFromRs(rs));
                 }
-
             }
 
         } catch(SQLException e) {
-            throw new MonthlyReportException(e);
+            throw new ExpiredRentalListException(e);
         }
         return rentals;
     }

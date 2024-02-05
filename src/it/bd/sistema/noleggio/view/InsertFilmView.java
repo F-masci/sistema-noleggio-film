@@ -2,6 +2,7 @@ package it.bd.sistema.noleggio.view;
 
 import it.bd.sistema.noleggio.bean.FilmBean;
 import it.bd.sistema.noleggio.exception.cli.ContinueCliException;
+import it.bd.sistema.noleggio.exception.cli.EscCliException;
 import it.bd.sistema.noleggio.utility.Price;
 
 import java.util.ArrayList;
@@ -9,7 +10,7 @@ import java.util.List;
 
 public class InsertFilmView extends GenericView {
 
-    public static FilmBean insertFilm() {
+    public static FilmBean insertFilm() throws EscCliException {
         println("Digitare esc durante l'inserimento per uscire");
         FilmBean bean = new FilmBean(
                 requestString("Titolo: "),

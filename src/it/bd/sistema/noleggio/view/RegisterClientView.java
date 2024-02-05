@@ -2,13 +2,14 @@ package it.bd.sistema.noleggio.view;
 
 import it.bd.sistema.noleggio.bean.ClientBean;
 import it.bd.sistema.noleggio.exception.cli.ContinueCliException;
+import it.bd.sistema.noleggio.exception.cli.EscCliException;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class RegisterClientView extends InsertClientAddressView {
 
-    public static ClientBean registerClient() {
+    public static ClientBean registerClient() throws EscCliException {
         println("Digitare esc durante l'inserimento per uscire");
         ClientBean bean = new ClientBean(
                 requestString("Codice fiscale: "),
@@ -30,7 +31,7 @@ public class RegisterClientView extends InsertClientAddressView {
     }
 
     public static void printCard(int card) {
-        println("La tessera cliente è :" + card);
+        println("La tessera cliente è: " + card);
     }
 
 }

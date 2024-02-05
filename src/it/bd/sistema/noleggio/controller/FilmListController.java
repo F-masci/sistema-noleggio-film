@@ -44,7 +44,7 @@ public class FilmListController implements Controller {
             FilmListView.printList(bean);
         } catch (DaoException e) {
             FilmListView.showErrorMessage(e);
-        } catch (EscCliException ignored) {}
+        }
     }
 
 }
