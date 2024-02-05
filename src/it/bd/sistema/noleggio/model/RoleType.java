@@ -1,7 +1,7 @@
 package it.bd.sistema.noleggio.model;
 
 public enum RoleType {
-    OWNER("Proprietario"), CASHIER("Cassiere"), EMPLOYEE("Impiegato");
+    OWNER("Proprietario"), CASHIER("Cassiere"), EMPLOYEE("Commesso"), NOT_VALID(null);;
 
     private final String role;
     RoleType(String role) {
@@ -20,7 +20,8 @@ public enum RoleType {
         return switch (role) {
             case "Proprietario" -> OWNER;
             case "Cassiere" -> CASHIER;
-            default -> EMPLOYEE;
+            case "Commesso" -> EMPLOYEE;
+            default -> NOT_VALID;
         };
     }
 }
