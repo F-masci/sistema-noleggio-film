@@ -4,13 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4e361a1-2ec8-45e0-a0af-0dfbecb777c4" name="Changes" comment="Minor">
+    <list default="true" id="c4e361a1-2ec8-45e0-a0af-0dfbecb777c4" name="Changes" comment="Completed">
+      <change afterPath="$PROJECT_DIR$/sql/db.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/events/cleanup_10.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/events/cleanup_5.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/inserisciTurnoLavoro.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/inserisciTurnoLavoro.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/login.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/login.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/procedures/modificaCarica.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/modificaCarica.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/registraNoleggio.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/registraNoleggio.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/registraRestituzione.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/registraRestituzione.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/reportAnnuale.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/reportAnnuale.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/rimuoviRecapitiCliente.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/rimuoviRecapitiCliente.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/rimuoviTurnoLavoro.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/rimuoviTurnoLavoro.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/procedures/timbra.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/timbra.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/RoleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/RoleType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/LoginView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,46 +54,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.SistemaNoleggio.executor": "Run",
-    "Database Script.createFunctions.executor": "Run",
-    "Database Script.createProcedures.executor": "Run",
-    "Database Script.grantExecute.executor": "Run",
-    "Database Script.insertData.executor": "Run",
-    "Database Script.runAllConfig.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
-    "database.data.extractors.current.export.id": "SQL Inserts",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/OneDrive - Universita' degli Studi di Roma Tor Vergata/Università/Github/SistemaNoleggioFilm/sql/grants/proprietario.sql",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/OneDrive - Universita' degli Studi di Roma Tor Vergata/Università/Github/SistemaNoleggioFilm/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.31149426",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SistemaNoleggio.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.createFunctions.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.createProcedures.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.grantExecute.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.insertData.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.runAllConfig.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;false&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;SQL Inserts&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/OneDrive - Universita' degli Studi di Roma Tor Vergata/Università/Github/SistemaNoleggioFilm/sql/grants/proprietario.sql&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/OneDrive - Universita' degli Studi di Roma Tor Vergata/Università/Github/SistemaNoleggioFilm/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.31149426&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql",
-      "mariadb"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;,
+      &quot;mariadb&quot;
     ],
-    "RunConfigurationTargetLRU": [
-      "309ccba4-a859-4b5f-8670-6ca1d2acbb7c/schema/\"sistema_noleggio\"",
-      "309ccba4-a859-4b5f-8670-6ca1d2acbb7c"
+    &quot;RunConfigurationTargetLRU&quot;: [
+      &quot;309ccba4-a859-4b5f-8670-6ca1d2acbb7c/schema/\&quot;sistema_noleggio\&quot;&quot;,
+      &quot;309ccba4-a859-4b5f-8670-6ca1d2acbb7c&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="it.bd.sistema.noleggio.exception" />
@@ -101,7 +109,7 @@
       <recent name="it.bd.sistema.noleggio.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Database Script.runAllConfig">
+  <component name="RunManager" selected="Application.SistemaNoleggio">
     <configuration name="SistemaNoleggio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="it.bd.sistema.noleggio.SistemaNoleggio" />
       <module name="SistemaNoleggioFilm" />
@@ -168,7 +176,9 @@
       <workItem from="1706915546706" duration="14606000" />
       <workItem from="1706930215558" duration="3627000" />
       <workItem from="1707002872781" duration="19100000" />
-      <workItem from="1707091787435" duration="11560000" />
+      <workItem from="1707091787435" duration="11872000" />
+      <workItem from="1707169228998" duration="13656000" />
+      <workItem from="1707220113125" duration="5258000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -210,7 +220,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707103464307</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Minor">
+      <option name="closed" value="true" />
+      <created>1707104836299</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707104836299</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Minor">
+      <option name="closed" value="true" />
+      <created>1707104860335</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707104860335</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +248,7 @@
     <MESSAGE value="Owner client completed" />
     <MESSAGE value="Cashier client completed" />
     <MESSAGE value="Minor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor" />
+    <MESSAGE value="Completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed" />
   </component>
 </project>

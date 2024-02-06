@@ -7,5 +7,4 @@ begin
     WHERE extract(year from data) = var_year
     GROUP BY impiegato, extract(month from data)
     ORDER BY nome, mese;
-
 end

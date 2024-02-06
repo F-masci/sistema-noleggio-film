@@ -9,7 +9,7 @@ public enum RoleType {
     }
 
     public String getConnectionRole() {
-        return role.toLowerCase();
+        return role != null ? role.toLowerCase() : null;
     }
 
     public String getRole() {

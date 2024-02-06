@@ -13,7 +13,7 @@ begin
     end;
 
     set autocommit=0;
-    set transaction isolation level read committed;
+    set transaction isolation level repeatable read;
 
 
     start transaction;
