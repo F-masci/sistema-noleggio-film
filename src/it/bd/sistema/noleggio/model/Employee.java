@@ -7,7 +7,7 @@ public class Employee extends User {
     private final long phone;
 
     public Employee(String username, RoleType role, String cf) {
-        this(cf, null, 0, role);
+        this(username, cf, null, 0, role);
     }
     public Employee(String cf, String name, long phone, RoleType role) {
         this(null, cf, name, phone, role);

@@ -10,11 +10,11 @@ public class RegisterEmployeeView extends GenericView {
         return new EmployeeBean(
                 requestString( "Username: "),
                 requestString("Password: "),
-                requestString("Ruolo (Cassiere | Commesso): "),
-                requestString("Data di inizio carica (YYYY-MM-DD): "),
-                requestString( "Codice fiscale: "),
+                requestRole("Ruolo (Cassiere | Commesso): "),
+                requestDate("Data di inizio carica (YYYY-MM-DD): "),
+                requestFiscalCode( "Codice fiscale: "),
                 requestString("Nome: "),
-                requestLong("Recapito: ")
+                requestPhoneNumber("Recapito: ")
         );
     }
 

@@ -18,14 +18,15 @@ public class CashierController implements Controller {
 
                 switch (selection) {
                     case 1 -> controller = new ClockInOutController();
-                    case 2 -> controller = new RegisterClientController();
-                    case 3 -> controller = new ClientListController();
-                    case 4 -> controller = new RemoveClientController();
-                    case 5 -> controller = new InsertClientAddressController();
-                    case 6 -> controller = new RemoveClientAddressController();
-                    case 7 -> controller = new RegisterRentalController();
-                    case 8 -> controller = new RegisterReturnController();
-                    case 9 -> controller = new RentalListController();
+                    case 2 -> controller = new WorkingHoursListController();
+                    case 3 -> controller = new RegisterClientController();
+                    case 4 -> controller = new ClientListController();
+                    case 5 -> controller = new RemoveClientController();
+                    case 6 -> controller = new InsertClientAddressController();
+                    case 7 -> controller = new RemoveClientAddressController();
+                    case 8 -> controller = new RegisterRentalController();
+                    case 9 -> controller = new RegisterReturnController();
+                    case 10 -> controller = new RentalListController();
                     default -> throw new SelectionNotValidException();
                 }
 

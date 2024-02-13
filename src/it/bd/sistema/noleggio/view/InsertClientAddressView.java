@@ -22,7 +22,7 @@ public class InsertClientAddressView extends GenericView {
 
         try {
             while (true) {
-                emails.add(requestString("Email: "));
+                emails.add(requestEmail("Email: "));
             }
         } catch(ContinueCliException ignored) {}
 
@@ -30,7 +30,7 @@ public class InsertClientAddressView extends GenericView {
 
         try {
             while (true) {
-                phones.add(requestLong("Telefono: "));
+                phones.add(requestPhoneNumber("Telefono: "));
             }
         } catch(ContinueCliException ignored) {}
 
@@ -38,7 +38,7 @@ public class InsertClientAddressView extends GenericView {
 
         try {
             while (true) {
-                mobilePhones.add(requestLong("Cellulare: "));
+                mobilePhones.add(requestPhoneNumber("Cellulare: "));
             }
         } catch(ContinueCliException ignored) {}
 

@@ -1,0 +1,9 @@
+INSERT INTO sistema_noleggio.carica (impiegato, inizio, fine, mansione) VALUES ('CRBRRD15L41B205E', '2020-01-01', null, 'Cassiere');
+INSERT INTO sistema_noleggio.carica (impiegato, inizio, fine, mansione) VALUES ('CRNDYN01T01F109U', '2007-08-24', null, 'Cassiere');
+INSERT INTO sistema_noleggio.carica (impiegato, inizio, fine, mansione) VALUES ('DMITST78B01C336K', '2009-04-05', null, 'Commesso');
+INSERT INTO sistema_noleggio.carica (impiegato, inizio, fine, mansione) VALUES ('DPTFWZ64D41C241Z', '2001-04-20', '2003-02-24', 'Commesso');
+INSERT INTO sistema_noleggio.carica (impiegato, inizio, fine, mansione) VALUES ('DPTFWZ64D41C241Z', '2003-02-25', '2015-05-23', 'Cassiere');
+INSERT INTO sistema_noleggio.carica (impiegato, inizio, fine, mansione) VALUES ('DPTFWZ64D41C241Z', '2015-05-24', null, 'Commesso');
+INSERT INTO sistema_noleggio.carica (impiegato, inizio, fine, mansione) VALUES ('LVTHMD02M41G196S', '2005-06-12', null, 'Commesso');
+INSERT INTO sistema_noleggio.carica (impiegato, inizio, fine, mansione) VALUES ('RTZVLL21E41E664J', '2020-05-01', '2022-11-13', 'Commesso');
+INSERT INTO sistema_noleggio.carica (impiegato, inizio, fine, mansione) VALUES ('RTZVLL21E41E664J', '2022-11-14', null, 'Cassiere');

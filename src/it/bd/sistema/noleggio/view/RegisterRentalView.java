@@ -10,7 +10,7 @@ public class RegisterRentalView extends GenericView {
         return new RentalBean(
                 requestInt("Codice della copia da noleggiare: "),
                 requestInt("Tessera cliente: "),
-                requestString("Data di scadenza (YYYY-MM-DD): ")
+                requestDate("Data di scadenza (YYYY-MM-DD): ")
         );
     }
 

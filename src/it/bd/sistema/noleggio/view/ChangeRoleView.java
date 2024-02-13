@@ -8,9 +8,9 @@ public class ChangeRoleView extends GenericView {
     public static ChangeRoleBean changeRole() throws EscCliException {
         println("Digitare esc durante l'inserimento per uscire");
         return new ChangeRoleBean(
-                requestString( "Codice fiscale dell'impiegato: "),
-                requestString("Data di fine della carica precedente (YYYY-MM-DD): "),
-                requestString("Ruolo (Cassiere | Commesso): ")
+                requestFiscalCode("Codice fiscale dell'impiegato: "),
+                requestDate("Data di fine della carica precedente (YYYY-MM-DD): "),
+                requestRole("Ruolo (Cassiere | Commesso): ")
         );
     }
 

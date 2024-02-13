@@ -1,8 +1,10 @@
 package it.bd.sistema.noleggio.view;
 
+import it.bd.sistema.noleggio.exception.FieldNotValidException;
 import it.bd.sistema.noleggio.exception.cli.ContinueCliException;
 import it.bd.sistema.noleggio.exception.cli.EscCliException;
 import it.bd.sistema.noleggio.exception.cli.SelectionNotValidException;
+import it.bd.sistema.noleggio.utility.Validator;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -76,28 +78,112 @@ public abstract class GenericView {
         }
     }
 
-    protected static long requestLong() throws EscCliException, ContinueCliException {
-        return requestLong(null);
+    protected static String requestRole() throws EscCliException, ContinueCliException {
+        return requestRole("Ruolo (Cassiere | Commesso): ");
     }
-    protected static long requestLong(String msg) throws EscCliException, ContinueCliException {
+    protected static String requestRole(String msg) throws EscCliException, ContinueCliException {
         while (true) {
             try {
-                return Long.parseLong(requestString(msg));
-            } catch (NumberFormatException e) {
-                showErrorMessage("L'input inserito non è un numero");
+                return Validator.validateRole(requestString(msg));
+            } catch (FieldNotValidException e) {
+                showErrorMessage(e);
             }
         }
     }
 
-    protected static float requestFloat() throws EscCliException, ContinueCliException {
-        return requestFloat(null);
+    protected static long requestPhoneNumber() throws EscCliException, ContinueCliException {
+        return requestPhoneNumber(null);
     }
-    protected static float requestFloat(String msg) throws EscCliException, ContinueCliException {
+    protected static long requestPhoneNumber(String msg) throws EscCliException, ContinueCliException {
         while (true) {
             try {
-                return Float.parseFloat(requestString(msg));
+                return Long.parseLong(Validator.validatePhoneNumber(requestString(msg)));
+            } catch (FieldNotValidException e) {
+                showErrorMessage(e);
+            }
+        }
+    }
+
+    protected static float requestPrice() throws EscCliException, ContinueCliException {
+        return requestPrice(null);
+    }
+    protected static float requestPrice(String msg) throws EscCliException, ContinueCliException {
+        while (true) {
+            try {
+                float price = Float.parseFloat(requestString(msg));
+                if(price < 0) throw new FieldNotValidException("Il costo deve essere maggiore o uaguale a 0");
+                return price;
             } catch (NumberFormatException e) {
                 showErrorMessage("L'input inserito non è un numero");
+            } catch(FieldNotValidException e) {
+                showErrorMessage(e);
+            }
+        }
+    }
+
+    protected static String requestFiscalCode() throws EscCliException, ContinueCliException {
+        return requestFiscalCode("Codice fiscale: ");
+    }
+    protected static String requestFiscalCode(String msg) throws EscCliException, ContinueCliException {
+        while (true) {
+            try {
+                return Validator.validateFiscalCode(requestString(msg));
+            } catch (FieldNotValidException e) {
+                showErrorMessage(e);
+            }
+        }
+    }
+
+    protected static String requestDate() throws EscCliException, ContinueCliException {
+        return requestDate("Data (YYYY-MM-DD): ");
+    }
+    protected static String requestDate(String msg) throws EscCliException, ContinueCliException {
+        while (true) {
+            try {
+                return Validator.validateDate(requestString(msg));
+            } catch (FieldNotValidException e) {
+                showErrorMessage(e);
+            }
+        }
+    }
+
+    protected static String requestEmail() throws EscCliException, ContinueCliException {
+        return requestEmail("Email: ");
+    }
+    protected static String requestEmail(String msg) throws EscCliException, ContinueCliException {
+        while (true) {
+            try {
+                return Validator.validateEmail(requestString(msg));
+            } catch (FieldNotValidException e) {
+                showErrorMessage(e);
+            }
+        }
+    }
+
+    protected static String requestTypeOfFilmCopy() throws EscCliException, ContinueCliException {
+        return requestTypeOfFilmCopy("Tipo di copia (DVD | Videocassetta): ");
+    }
+    protected static String requestTypeOfFilmCopy(String msg) throws EscCliException, ContinueCliException {
+        while (true) {
+            try {
+                return Validator.validateTypeOfFilmCopy(requestString(msg));
+            } catch (FieldNotValidException e) {
+                showErrorMessage(e);
+            }
+        }
+    }
+
+    protected static String requestWorkingHour() throws EscCliException, ContinueCliException {
+        return requestWorkingHour("Orario di lavoro (00:00-00:00): ");
+    }
+    protected static String requestWorkingHour(String msg) throws EscCliException, ContinueCliException {
+        while (true) {
+            try {
+                String workingHour = requestString(msg);
+                if(workingHour.isBlank()) return workingHour;
+                return Validator.validateWorkingHour(workingHour);
+            } catch (FieldNotValidException e) {
+                showErrorMessage(e);
             }
         }
     }

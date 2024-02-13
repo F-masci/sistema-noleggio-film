@@ -11,7 +11,7 @@ public class RemoveWorkingHoursView extends GenericView {
 
     public static WorkingHoursBean removeWorkingHoursView() throws EscCliException {
         println("Digitare esc durante l'inserimento per uscire");
-        String employee = requestString( "Codice fiscale dell'impiegato: ");
+        String employee = requestFiscalCode( "Codice fiscale dell'impiegato: ");
         int month = requestInt("Mese: ");
         int year = requestInt("Anno: ");
         return new WorkingHoursBean(

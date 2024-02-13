@@ -11,7 +11,7 @@ public class InsertWorkingHoursView extends GenericView {
 
     public static WorkingHoursBean insertWorkingHoursView() throws EscCliException {
         println("Digitare esc durante l'inserimento per uscire");
-        String employee = requestString( "Codice fiscale dell'impiegato: ");
+        String employee = requestFiscalCode( "Codice fiscale dell'impiegato: ");
         int month = requestInt("Mese: ");
         int year = requestInt("Anno: ");
 
@@ -25,7 +25,7 @@ public class InsertWorkingHoursView extends GenericView {
 
         int numDays = LocalDate.of(year, month, 1).lengthOfMonth();
         for (int d = 1; d <= numDays; d++) {
-            String h = requestString(LocalDate.of(year, month, d) + ": ");
+            String h = requestWorkingHour(LocalDate.of(year, month, d) + ": ");
             if(!h.isBlank()) {
                 hours.add(h);
                 days.add(d);

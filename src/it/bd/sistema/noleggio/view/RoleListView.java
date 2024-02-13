@@ -9,7 +9,7 @@ public class RoleListView extends GenericView {
 
     public static RoleBean roleList() throws EscCliException {
         return new RoleBean(
-                requestString("Codice fiscale dell'impiegato (oppure esc per tornare indietro): ")
+                requestFiscalCode("Codice fiscale dell'impiegato (oppure esc per tornare indietro): ")
         );
     }
 

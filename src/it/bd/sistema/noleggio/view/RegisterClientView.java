@@ -12,10 +12,10 @@ public class RegisterClientView extends InsertClientAddressView {
     public static ClientBean registerClient() throws EscCliException {
         println("Digitare esc durante l'inserimento per uscire");
         ClientBean bean = new ClientBean(
-                requestString("Codice fiscale: "),
+                requestFiscalCode("Codice fiscale: "),
                 requestString("Nome: "),
                 requestString("Cognome: "),
-                requestString("Data di nascita (YYYY-MM-DD): "),
+                requestDate("Data di nascita (YYYY-MM-DD): "),
                 requestString("Indirizzo: "),
                 requestInt("CAP: "),
                 requestInt("Numero civico: ")

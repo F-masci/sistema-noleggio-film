@@ -10,7 +10,8 @@ public class EmployeeView extends GenericView {
             --- IMPIEGATO ---
             
             Seleziona cosa vuoi fare
-            [1] Timbra""", 1);
+            [1] Timbra
+            [2] Lista turni di lavoro""", 2);
     }
 
 }

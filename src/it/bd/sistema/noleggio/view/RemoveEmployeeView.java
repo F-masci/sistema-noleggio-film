@@ -7,7 +7,7 @@ public class RemoveEmployeeView extends GenericView {
 
     public static EmployeeBean removeEmployee() throws EscCliException {
         println("ATTENZIONE! Rimuovendo un impiegato verranno rimossi anche i dati relativi dei turni di lavoro dell'impiegato e le cariche rivestite dall'impiegato nel negozio");
-        return new EmployeeBean(requestString("Codice fiscale impiegato (oppure esc per tornare indietro): "));
+        return new EmployeeBean(requestFiscalCode("Codice fiscale impiegato (oppure esc per tornare indietro): "));
     }
 
 }

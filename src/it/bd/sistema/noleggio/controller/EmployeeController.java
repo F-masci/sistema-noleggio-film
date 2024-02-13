@@ -17,6 +17,7 @@ public class EmployeeController implements Controller {
 
                 switch (selection) {
                     case 1 -> controller = new ClockInOutController();
+                    case 2 -> controller = new WorkingHoursListController();
                     default -> throw new SelectionNotValidException();
                 }
 

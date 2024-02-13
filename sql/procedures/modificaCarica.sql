@@ -13,7 +13,7 @@ begin
     end;
 
     set autocommit=0;
-    set transaction isolation level repeatable read;
+    set transaction isolation level serializable;
 
     set var_start_date = var_end_date + INTERVAL 1 day;
 

@@ -17,8 +17,8 @@ public class InsertFilmView extends GenericView {
                 requestString("Regista: "),
                 requestInt("Anno: "),
                 new Price(
-                        requestFloat("Costo DVD: "),
-                        requestFloat("Costo videocassetta: ")
+                        requestPrice("Costo DVD: "),
+                        requestPrice("Costo videocassetta: ")
                 ),
                 new FilmBean(
                         requestString("Titolo del film di cui è il remake (lasciare vuoto se il film è originale): "),

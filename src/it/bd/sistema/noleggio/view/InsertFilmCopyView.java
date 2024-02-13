@@ -4,6 +4,7 @@ import it.bd.sistema.noleggio.bean.FilmBean;
 import it.bd.sistema.noleggio.bean.FilmCopyBean;
 import it.bd.sistema.noleggio.exception.cli.EscCliException;
 import it.bd.sistema.noleggio.model.FilmCopyType;
+import it.bd.sistema.noleggio.utility.Validator;
 
 public class InsertFilmCopyView extends GenericView {
 
@@ -15,7 +16,7 @@ public class InsertFilmCopyView extends GenericView {
                         requestString("Titolo del film: "),
                         requestString("Regista del film: ")
                 ),
-                FilmCopyType.createFromString(requestString("Tipo di copia (DVD | Videocassetta): ")),
+                FilmCopyType.createFromString(requestTypeOfFilmCopy("Tipo di copia (DVD | Videocassetta): ")),
                 requestInt("Codice del settore: "),
                 requestString("Posizione all'interno del settore: ")
         );

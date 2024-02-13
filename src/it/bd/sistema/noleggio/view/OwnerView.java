@@ -9,7 +9,7 @@ public class OwnerView extends GenericView {
             
             --- PROPRIETARIO ---
             
-            Seleziona cosa vuoi fare
+            Seleziona cosa vuoi fare (oppure esc per uscire dal sistema)
             [1] Registra impiegato
             [2] Lista impiegati
             [3] Rimuovi impiegato

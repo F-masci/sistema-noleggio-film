@@ -1,0 +1,15 @@
+INSERT INTO sistema_noleggio.cellulare (cliente, cellulare) VALUES (1, 3241074156);
+INSERT INTO sistema_noleggio.cellulare (cliente, cellulare) VALUES (1, 3537662110);
+INSERT INTO sistema_noleggio.cellulare (cliente, cellulare) VALUES (2, 3965088108);
+INSERT INTO sistema_noleggio.cellulare (cliente, cellulare) VALUES (3, 3412454242);
+INSERT INTO sistema_noleggio.cellulare (cliente, cellulare) VALUES (3, 3867006911);
+INSERT INTO sistema_noleggio.cellulare (cliente, cellulare) VALUES (4, 3297671860);
+INSERT INTO sistema_noleggio.cellulare (cliente, cellulare) VALUES (5, 3587338595);
+INSERT INTO sistema_noleggio.cellulare (cliente, cellulare) VALUES (6, 3143677426);
+INSERT INTO sistema_noleggio.cellulare (cliente, cellulare) VALUES (6, 3656371368);
+INSERT INTO sistema_noleggio.cellulare (cliente, cellulare) VALUES (6, 3950824594);
+INSERT INTO sistema_noleggio.cellulare (cliente, cellulare) VALUES (7, 3885008895);
+INSERT INTO sistema_noleggio.cellulare (cliente, cellulare) VALUES (8, 3572570724);
+INSERT INTO sistema_noleggio.cellulare (cliente, cellulare) VALUES (9, 3107826961);
+INSERT INTO sistema_noleggio.cellulare (cliente, cellulare) VALUES (10, 3383632451);
+INSERT INTO sistema_noleggio.cellulare (cliente, cellulare) VALUES (10, 3521422661);
