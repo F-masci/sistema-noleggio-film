@@ -1,5 +1,6 @@
 package it.bd.sistema.noleggio.controller;
 
+import it.bd.sistema.noleggio.exception.cli.ContinueCliException;
 import it.bd.sistema.noleggio.exception.cli.EscCliException;
 import it.bd.sistema.noleggio.exception.cli.SelectionNotValidException;
 import it.bd.sistema.noleggio.view.EmployeeView;
@@ -27,7 +28,7 @@ public class EmployeeController implements Controller {
                 return;
             } catch(SelectionNotValidException e) {
                 EmployeeView.showErrorMessage(e);
-            }
+            } catch(ContinueCliException ignored) {}
         }
     }
 

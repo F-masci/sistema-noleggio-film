@@ -1,5 +1,5 @@
 DROP PROCEDURE IF EXISTS `inserisciTurnoLavoro`;
-CREATE PROCEDURE `inserisciTurnoLavoro` (in var_employee CHAR(16), in var_month TINYINT(2), in var_year YEAR, in var_list_days VARCHAR(62), in var_list_hours VARCHAR(372))
+CREATE PROCEDURE `inserisciTurnoLavoro` (in var_employee CHAR(16), in var_month TINYINT(2), in var_year YEAR, in var_list_days VARCHAR(84), in var_list_hours VARCHAR(372))
 begin
 
     -- La variabile var_list_days contiene un elenco del tipo 1;2;3;4;...; -> giorni a cui si riferiscono gli orari
@@ -7,9 +7,9 @@ begin
 
     declare var_counter INT;  -- Indice del loop
     declare var_day TINYINT(2); -- Contiene il numero del giorno da inserire
-    declare var_hours CHAR(17); -- Contiene gli orari del tipo 00:00-00:00
-    declare var_start_hour TIME; -- Contiene gli orari del tipo 00:00
-    declare var_end_hour TIME; -- Contiene gli orari del tipo 00:00
+    declare var_hours CHAR(11); -- Contiene gli orari del tipo 00:00-00:00
+    declare var_start_hour TIME; -- Contiene gli orari del tipo 00:00:00
+    declare var_end_hour TIME; -- Contiene gli orari del tipo 00:00:00
 
     declare var_check TINYINT; -- Mantiene il controllo per capire se il turno di quel mese è stato già inserito o meno
     
@@ -26,8 +26,14 @@ begin
     start transaction;
 
     /**
-      * Il controllo viene eseguito all'interno della procedura e non attraverso un trigger poiché in questo modo lo statement di SELECT viene eseguito una sola volta
+      * I controlli vengono eseguiti all'interno della procedura e non attraverso un trigger poiché in questo modo viene eseguito una sola volta
       * anziché per ogni riga inserita nella tabella.
+      */
+    if CAST(CONCAT(var_year, '-', LPAD(var_month, 2, '0'), '-01') as date) <= CURDATE() then
+        signal sqlstate '45000' set message_text = 'Il mese deve essere maggiore di quello odierno';
+    end if;
+
+    /**
       * Non si può sfruttare l'univocità della chiave primaria per eseguire il controllo poiché se viene inserito un turno in un mese compilato
       * ma in un giorno non presente tale giorno verrà inserito senza generare errori
       */

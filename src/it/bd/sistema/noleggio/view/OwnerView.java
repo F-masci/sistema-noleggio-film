@@ -14,7 +14,7 @@ public class OwnerView extends GenericView {
             [2] Lista impiegati
             [3] Rimuovi impiegato
             [4] Modifica carica di un impiegato
-            [5] Storica cariche di un impiegato
+            [5] Storico cariche di un impiegato
             [6] Inserisci turno di lavoro
             [7] Lista turni di lavoro
             [8] Rimuovi turno di lavoro

@@ -13,7 +13,7 @@ begin
 
     start transaction read only;
         open cur;
-        SELECT * FROM film ORDER BY titolo, regista;
+        SELECT titolo, regista, anno, costo_dvd, costo_videocassetta, originale_titolo, originale_regista FROM film ORDER BY titolo, regista;
         read_loop: loop
 
             fetch cur into var_title, var_director;

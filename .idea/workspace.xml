@@ -5,59 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4e361a1-2ec8-45e0-a0af-0dfbecb777c4" name="Changes" comment="Completed">
-      <change afterPath="$PROJECT_DIR$/resources/csv/carica.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/csv/cast_film.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/csv/cellulare.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/csv/cliente.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/csv/copia_film.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/csv/email.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/csv/film.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/csv/impiegato.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/csv/login.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/csv/noleggio.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/csv/settore.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/csv/telefono.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/csv/turno_lavoro.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/import/carica.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/import/cast_film.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/import/cellulare.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/import/cliente.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/import/copia_film.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/import/email.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/import/film.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/import/impiegato.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/import/login.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/import/noleggio.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/import/settore.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/import/telefono.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/import/turno_lavoro.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/exception/FieldNotValidException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/utility/Validator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/db.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/procedures/modificaCarica.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/modificaCarica.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/testProcedure.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/grants/cassiere.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/grants/cassiere.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/grants/impiegato.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/grants/impiegato.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/grants/login.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/grants/login.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/grants/proprietario.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/grants/proprietario.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/inserisciTurnoLavoro.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/inserisciTurnoLavoro.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/listaClienti.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/listaClienti.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/listaFilm.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/listaFilm.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/listaNoleggiScaduti.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/listaNoleggiScaduti.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/reportAnnuale.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/reportAnnuale.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/reportMensile.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/reportMensile.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/timbra.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/timbra.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/CashierController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/CashierController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/model/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/CashierView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/CashierView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/ChangeRoleView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/ChangeRoleView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/EmployeeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/EmployeeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/GenericView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/GenericView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/InsertClientAddressView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/InsertClientAddressView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/InsertFilmCopyView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/InsertFilmCopyView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/InsertFilmView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/InsertFilmView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/InsertWorkingHoursView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/InsertWorkingHoursView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/LoginView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/EmployeeListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/EmployeeListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/OwnerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/OwnerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/ClientListView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/ClientListView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/OwnerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/OwnerView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RegisterClientView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RegisterClientView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RegisterEmployeeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RegisterEmployeeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RegisterRentalView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RegisterRentalView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RemoveClientAddressView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RemoveClientAddressView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RemoveEmployeeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RemoveEmployeeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RemoveWorkingHoursView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RemoveWorkingHoursView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RoleListView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/RoleListView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/WorkingHoursListView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/WorkingHoursListView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,46 +60,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.SistemaNoleggio.executor": "Run",
-    "Database Script.createFunctions.executor": "Run",
-    "Database Script.createProcedures.executor": "Run",
-    "Database Script.grantExecute.executor": "Run",
-    "Database Script.insertData.executor": "Run",
-    "Database Script.runAllConfig.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
-    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/OneDrive - Universita' degli Studi di Roma Tor Vergata/Università/Github/SistemaNoleggioFilm/resources/csv",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/OneDrive - Universita' degli Studi di Roma Tor Vergata/Università/Github/SistemaNoleggioFilm/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.31149426",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SistemaNoleggio.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.createFunctions.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.createProcedures.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.grantExecute.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.insertData.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.runAllConfig.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;false&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/OneDrive - Universita' degli Studi di Roma Tor Vergata/Università/Github/SistemaNoleggioFilm/resources/csv&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/OneDrive - Universita' degli Studi di Roma Tor Vergata/Università/Github/SistemaNoleggioFilm/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.31149426&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql",
-      "mariadb"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;,
+      &quot;mariadb&quot;
     ],
-    "RunConfigurationTargetLRU": [
-      "309ccba4-a859-4b5f-8670-6ca1d2acbb7c/schema/\"sistema_noleggio\"",
-      "309ccba4-a859-4b5f-8670-6ca1d2acbb7c"
+    &quot;RunConfigurationTargetLRU&quot;: [
+      &quot;309ccba4-a859-4b5f-8670-6ca1d2acbb7c/schema/\&quot;sistema_noleggio\&quot;&quot;,
+      &quot;309ccba4-a859-4b5f-8670-6ca1d2acbb7c&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="it.bd.sistema.noleggio.exception" />
@@ -226,6 +193,7 @@
       <workItem from="1707598764853" duration="3457000" />
       <workItem from="1707619180125" duration="9113000" />
       <workItem from="1707772625657" duration="9392000" />
+      <workItem from="1708184911802" duration="18181000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />

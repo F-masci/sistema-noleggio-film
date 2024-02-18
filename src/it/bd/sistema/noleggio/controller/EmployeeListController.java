@@ -30,7 +30,7 @@ public class EmployeeListController implements Controller {
             EmployeeListView.printList(bean);
         } catch (DaoException e) {
             EmployeeListView.showErrorMessage(e);
-        }    catch(EscCliException ignored) {}
+        } catch(EscCliException ignored) {}
     }
 
 }

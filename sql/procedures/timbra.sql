@@ -2,7 +2,7 @@ DROP PROCEDURE IF EXISTS `timbra`;
 CREATE PROCEDURE `timbra` (in var_employee CHAR(16))
 begin
 
-    declare var_started_job TINYINT;
+    declare var_started_job TIME;
     declare var_affected_row INT;
 
     declare exit handler for sqlexception
@@ -18,9 +18,9 @@ begin
 
     start transaction;
 
-    SELECT count(*) FROM turno_iniziato WHERE impiegato = var_employee AND data = CURDATE() INTO var_started_job;
+    SELECT ingresso FROM turno_lavoro WHERE impiegato = var_employee AND data = CURDATE() INTO var_started_job;
 
-    if not var_started_job
+    if var_started_job is null
     then
 
     -- TIMBRATURA IN INGRESSO

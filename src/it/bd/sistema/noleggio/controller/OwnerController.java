@@ -1,6 +1,7 @@
 package it.bd.sistema.noleggio.controller;
 
 import it.bd.sistema.noleggio.exception.InsertWorkingHoursException;
+import it.bd.sistema.noleggio.exception.cli.ContinueCliException;
 import it.bd.sistema.noleggio.exception.cli.EscCliException;
 import it.bd.sistema.noleggio.exception.cli.SelectionNotValidException;
 import it.bd.sistema.noleggio.view.OwnerView;
@@ -45,7 +46,7 @@ public class OwnerController implements Controller {
                 return;
             } catch(SelectionNotValidException e) {
                 OwnerView.showErrorMessage(e);
-            }
+            } catch(ContinueCliException ignored) {}
         }
     }
 }

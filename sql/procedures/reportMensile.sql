@@ -5,5 +5,5 @@ begin
     FROM turno_terminato
         JOIN impiegato ON codice_fiscale = impiegato
     WHERE extract(month from data) = var_month AND extract(year from data) = var_year
-    ORDER BY nome, data;
+    ORDER BY impiegato, data;
 end

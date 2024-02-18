@@ -12,7 +12,7 @@ begin
 
     start transaction read only;
         open cur;
-        SELECT * FROM cliente ORDER BY tessera;
+        SELECT tessera, codice_fiscale, nome, cognome, data_nascita, indirizzo_via, indirizzo_cap, indirizzo_civico FROM cliente ORDER BY tessera;
 
         read_loop: loop
             fetch cur into var_client;

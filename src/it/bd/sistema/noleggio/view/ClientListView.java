@@ -19,12 +19,12 @@ public class ClientListView extends GenericView {
                 print(String.format("%010d", mobilePhones.get(i)));
                 if(i != mobilePhones.size()-1) print(", ");
             }
-            if(!phones.isEmpty()) print(", ");
+            if(!mobilePhones.isEmpty()) print(", ");
             for(int i = 0; i<phones.size(); i++) {
                 print(String.format("%010d", phones.get(i)));
                 if(i != phones.size()-1) print(", ");
             }
-            if(!emails.isEmpty()) print(", ");
+            if(!phones.isEmpty()) print(", ");
             for(int i = 0; i<emails.size(); i++) {
                 print(emails.get(i));
                 if(i != emails.size()-1) print(", ");
