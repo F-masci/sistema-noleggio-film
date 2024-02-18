@@ -2,7 +2,6 @@ DROP PROCEDURE IF EXISTS `login`;
 CREATE PROCEDURE `login` (in var_username VARCHAR(100), in var_password VARCHAR(100), out var_role ENUM('Proprietario', 'Cassiere', 'Commesso'), out var_employee CHAR(16))
 begin
     declare var_check_username VARCHAR(100);
-    declare var_current_role ENUM('Cassiere', 'Commesso');
 
     SELECT username, login.impiegato, mansione
     FROM login

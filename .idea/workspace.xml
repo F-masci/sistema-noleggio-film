@@ -6,25 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c4e361a1-2ec8-45e0-a0af-0dfbecb777c4" name="Changes" comment="Completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/db.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/grants/cassiere.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/grants/cassiere.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/grants/impiegato.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/grants/impiegato.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/grants/login.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/grants/login.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/grants/proprietario.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/grants/proprietario.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/procedures/inserisciTurnoLavoro.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/inserisciTurnoLavoro.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/procedures/listaClienti.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/listaClienti.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/procedures/listaFilm.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/listaFilm.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/procedures/listaNoleggiScaduti.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/listaNoleggiScaduti.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/procedures/reportAnnuale.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/reportAnnuale.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/procedures/reportMensile.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/reportMensile.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/procedures/timbra.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/timbra.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/CashierController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/CashierController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/EmployeeListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/EmployeeListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/OwnerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/controller/OwnerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/ClientListView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/ClientListView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/OwnerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/OwnerView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/login.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/login.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +176,7 @@
       <workItem from="1707598764853" duration="3457000" />
       <workItem from="1707619180125" duration="9113000" />
       <workItem from="1707772625657" duration="9392000" />
-      <workItem from="1708184911802" duration="18181000" />
+      <workItem from="1708184911802" duration="19322000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -259,11 +242,30 @@
       <option name="project" value="LOCAL" />
       <updated>1707229131746</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Completed">
+      <option name="closed" value="true" />
+      <created>1708218065305</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1708218065305</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
