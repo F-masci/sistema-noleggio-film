@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4e361a1-2ec8-45e0-a0af-0dfbecb777c4" name="Changes" comment="Completed" />
+    <list default="true" id="c4e361a1-2ec8-45e0-a0af-0dfbecb777c4" name="Changes" comment="Completed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SistemaNoleggioFilm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SistemaNoleggioFilm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/factory/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/factory/ConnectionFactory.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +61,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/OneDrive - Universita' degli Studi di Roma Tor Vergata/Università/Github/SistemaNoleggioFilm",
+    "last_opened_file_path": "D:/OneDrive - Universita' degli Studi di Roma Tor Vergata/Università/Github/SistemaNoleggioFilm/relazione",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -84,6 +89,7 @@
       <recent name="it.bd.sistema.noleggio.exception" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\OneDrive - Universita' degli Studi di Roma Tor Vergata\Università\Github\SistemaNoleggioFilm\relazione" />
       <recent name="D:\OneDrive - Universita' degli Studi di Roma Tor Vergata\Università\Github\SistemaNoleggioFilm" />
       <recent name="D:\OneDrive - Universita' degli Studi di Roma Tor Vergata\Università\Github\SistemaNoleggioFilm\sql\procedures" />
     </key>
@@ -174,7 +180,9 @@
       <workItem from="1707598764853" duration="3457000" />
       <workItem from="1707619180125" duration="9113000" />
       <workItem from="1707772625657" duration="9392000" />
-      <workItem from="1708184911802" duration="20119000" />
+      <workItem from="1708184911802" duration="20339000" />
+      <workItem from="1708280937802" duration="513000" />
+      <workItem from="1708368623970" duration="2554000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -256,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708219325396</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Completed">
+      <option name="closed" value="true" />
+      <created>1708221778048</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1708221778048</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

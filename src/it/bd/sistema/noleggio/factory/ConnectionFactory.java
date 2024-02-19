@@ -21,7 +21,7 @@ public class ConnectionFactory {
     private ConnectionFactory() {}
 
     static {
-        try (InputStream input = new FileInputStream("resources/db.properties")) {
+        try (InputStream input = ConnectionFactory.class.getResourceAsStream("/db.properties")) {
             properties.load(input);
 
             String url = properties.getProperty("connection.url");
