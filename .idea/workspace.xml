@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4e361a1-2ec8-45e0-a0af-0dfbecb777c4" name="Changes" comment="Completed">
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/factory/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/factory/ConnectionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/functions/tokenize_string_list.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/functions/tokenize_string_list.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/inserisciTurnoLavoro.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/inserisciTurnoLavoro.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/rimuoviRecapitiCliente.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/rimuoviRecapitiCliente.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/rimuoviTurnoLavoro.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/rimuoviTurnoLavoro.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/InsertFilmView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/InsertFilmView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +186,9 @@
       <workItem from="1708184911802" duration="20339000" />
       <workItem from="1708280937802" duration="513000" />
       <workItem from="1708368623970" duration="3209000" />
-      <workItem from="1708390599824" duration="6672000" />
+      <workItem from="1708390599824" duration="6767000" />
+      <workItem from="1708398772675" duration="28000" />
+      <workItem from="1708443008427" duration="10730000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -286,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708398497545</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Completed">
+      <option name="closed" value="true" />
+      <created>1708398651889</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1708398651889</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

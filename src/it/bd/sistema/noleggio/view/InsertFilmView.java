@@ -28,7 +28,7 @@ public class InsertFilmView extends GenericView {
 
         println("""
                 Attori principali del film.
-                Durante l'inserimento dei recapiti digitare la parola 'fine' per terminare l'inserimento
+                Durante l'inserimento degli attori digitare la parola 'fine' per terminare l'inserimento
                 """);
 
         List<String> actorNames = new ArrayList<>();

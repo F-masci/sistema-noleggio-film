@@ -29,8 +29,8 @@ begin
       * I controlli vengono eseguiti all'interno della procedura e non attraverso un trigger poiché in questo modo viene eseguito una sola volta
       * anziché per ogni riga inserita nella tabella.
       */
-    if CAST(CONCAT(var_year, '-', LPAD(var_month, 2, '0'), '-01') as date) <= CURDATE() then
-        signal sqlstate '45000' set message_text = 'Il mese deve essere maggiore di quello odierno';
+    if CAST(CONCAT(var_year, '-', LPAD(var_month, 2, '0'), '-01') as date) < CAST(CONCAT(extract(year from CURDATE()), '-', LPAD(extract(month from CURDATE()), 2, '0'), '-01') as date) then
+        signal sqlstate '45000' set message_text = 'Il mese non può essere minore di quello odierno';
     end if;
 
     /**

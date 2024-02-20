@@ -486,8 +486,8 @@ begin
       * I controlli vengono eseguiti all'interno della procedura e non attraverso un trigger poiché in questo modo viene eseguito una sola volta
       * anziché per ogni riga inserita nella tabella.
       */
-    if CAST(CONCAT(var_year, '-', LPAD(var_month, 2, '0'), '-01') as date) <= CURDATE() then
-        signal sqlstate '45000' set message_text = 'Il mese deve essere maggiore di quello odierno';
+    if CAST(CONCAT(var_year, '-', LPAD(var_month, 2, '0'), '-01') as date) < CAST(CONCAT(extract(year from CURDATE()), '-', LPAD(extract(month from CURDATE()), 2, '0'), '-01') as date) then
+        signal sqlstate '45000' set message_text = 'Il mese non può essere minore di quello odierno';
     end if;
 
     /**
@@ -1145,7 +1145,7 @@ begin
     end;
 
     set autocommit=0;
-    set transaction isolation level serializable;
+    set transaction isolation level repeatable read;
 
     start transaction;
 
@@ -1244,8 +1244,8 @@ begin
 
     start transaction;
 
-    if CAST(CONCAT(var_year, '-', LPAD(var_month, 2, '0'), '-01') as date) <= CURDATE() then
-        signal sqlstate '45000' set message_text = 'Il mese deve essere maggiore di quello odierno';
+    if CAST(CONCAT(var_year, '-', LPAD(var_month, 2, '0'), '-01') as date) < CAST(CONCAT(extract(year from CURDATE()), '-', LPAD(extract(month from CURDATE()), 2, '0'), '-01') as date) then
+        signal sqlstate '45000' set message_text = 'Il mese non può essere minore di quello odierno';
     end if;
 
     SELECT count(*) FROM turno_iniziato WHERE extract(month from data) = var_month AND extract(year from data) = var_year AND impiegato = var_employee INTO var_check;
@@ -1883,8 +1883,6 @@ CREATE FUNCTION `tokenize_string_list` (var_string TEXT, var_delimiter CHAR(1), 
     RETURNS TEXT
     DETERMINISTIC
 BEGIN
-    declare var_prefix_len INT;
-    set var_prefix_len = length(substring_index(var_string, var_delimiter, var_occurrence-1));
     return substring_index(substring_index(var_string, var_delimiter, var_occurrence), var_delimiter, -1);
 END$$
 

@@ -21,7 +21,7 @@ begin
     end;
 
     set autocommit=0;
-    set transaction isolation level serializable;
+    set transaction isolation level repeatable read;
 
     start transaction;
 
