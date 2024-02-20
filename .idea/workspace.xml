@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4e361a1-2ec8-45e0-a0af-0dfbecb777c4" name="Changes" comment="Completed">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv/turno_lavoro.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/turno_lavoro.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/import/carica.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/import/cast_film.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/import/cellulare.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/import/cliente.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/import/copia_film.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/import/email.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/import/film.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/import/impiegato.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/import/login.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/import/noleggio.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/import/settore.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/import/telefono.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/import/turno_lavoro.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/procedures/rimuoviTurnoLavoro.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/rimuoviTurnoLavoro.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/factory/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/factory/ConnectionFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +180,7 @@
       <workItem from="1708184911802" duration="20339000" />
       <workItem from="1708280937802" duration="513000" />
       <workItem from="1708368623970" duration="3209000" />
-      <workItem from="1708390599824" duration="6236000" />
+      <workItem from="1708390599824" duration="6672000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -294,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708382074273</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Completed">
+      <option name="closed" value="true" />
+      <created>1708398497545</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1708398497545</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

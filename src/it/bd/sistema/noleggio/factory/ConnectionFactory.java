@@ -13,7 +13,7 @@ import java.util.Properties;
 
 public class ConnectionFactory {
 
-    private final static String propertiesFile = "resources/db.properties";
+    private final static String PROPERTIES_FILE = "/db.properties";
     private static Connection connection;
     private final static Properties properties = new Properties();;
 
@@ -21,7 +21,7 @@ public class ConnectionFactory {
     private ConnectionFactory() {}
 
     static {
-        try (InputStream input = ConnectionFactory.class.getResourceAsStream("/db.properties")) {
+        try (InputStream input = ConnectionFactory.class.getResourceAsStream(PROPERTIES_FILE)) {
             properties.load(input);
 
             String url = properties.getProperty("connection.url");
