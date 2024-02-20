@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4e361a1-2ec8-45e0-a0af-0dfbecb777c4" name="Changes" comment="Completed">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/functions/tokenize_string_list.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/functions/tokenize_string_list.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/procedures/inserisciTurnoLavoro.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/inserisciTurnoLavoro.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/procedures/rimuoviRecapitiCliente.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/rimuoviRecapitiCliente.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/procedures/rimuoviTurnoLavoro.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/rimuoviTurnoLavoro.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/InsertFilmView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/view/InsertFilmView.java" afterDir="false" />
-    </list>
+    <list default="true" id="c4e361a1-2ec8-45e0-a0af-0dfbecb777c4" name="Changes" comment="Completed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -188,7 +180,7 @@
       <workItem from="1708368623970" duration="3209000" />
       <workItem from="1708390599824" duration="6767000" />
       <workItem from="1708398772675" duration="28000" />
-      <workItem from="1708443008427" duration="10730000" />
+      <workItem from="1708443008427" duration="11044000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -302,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708398651889</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Completed">
+      <option name="closed" value="true" />
+      <created>1708465449420</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1708465449420</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
