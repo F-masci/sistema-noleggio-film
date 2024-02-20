@@ -1244,6 +1244,10 @@ begin
 
     start transaction;
 
+    if CAST(CONCAT(var_year, '-', LPAD(var_month, 2, '0'), '-01') as date) <= CURDATE() then
+        signal sqlstate '45000' set message_text = 'Il mese deve essere maggiore di quello odierno';
+    end if;
+
     SELECT count(*) FROM turno_iniziato WHERE extract(month from data) = var_month AND extract(year from data) = var_year AND impiegato = var_employee INTO var_check;
     if var_check > 0 then
         signal sqlstate '45000' set message_text = 'Turni di lavoro già iniziati';
@@ -1503,7 +1507,7 @@ INSERT INTO `sistema_noleggio`.`turno_lavoro` (`impiegato`, `data`, `ora_inizio`
 INSERT INTO `sistema_noleggio`.`turno_lavoro` (`impiegato`, `data`, `ora_inizio`, `ora_fine`, `ingresso`, `uscita`) VALUES ('CRBRRD15L41B205E', '2024-01-11', '09:00:00', '18:00:00', '08:51:58', '17:41:54');
 INSERT INTO `sistema_noleggio`.`turno_lavoro` (`impiegato`, `data`, `ora_inizio`, `ora_fine`, `ingresso`, `uscita`) VALUES ('CRBRRD15L41B205E', '2024-01-12', '09:00:00', '18:00:00', '08:59:31', '18:06:40');
 INSERT INTO `sistema_noleggio`.`turno_lavoro` (`impiegato`, `data`, `ora_inizio`, `ora_fine`, `ingresso`, `uscita`) VALUES ('CRBRRD15L41B205E', '2024-01-13', '09:00:00', '18:00:00', '08:40:19', '18:00:39');
-INSERT INTO `sistema_noleggio`.`turno_lavoro` (`impiegato`, `data`, `ora_inizio`, `ora_fine`, `ingresso`, `uscita`) VALUES ('CRBRRD15L41B205E', '2024-02-13', '09:00:00', '18:00:00', NULL, NULL);
+INSERT INTO `sistema_noleggio`.`turno_lavoro` (`impiegato`, `data`, `ora_inizio`, `ora_fine`, `ingresso`, `uscita`) VALUES ('CRBRRD15L41B205E', '2024-02-13', '09:00:00', '18:00:00', '09:01:35', '18:10:35');
 INSERT INTO `sistema_noleggio`.`turno_lavoro` (`impiegato`, `data`, `ora_inizio`, `ora_fine`, `ingresso`, `uscita`) VALUES ('CRBRRD15L41B205E', '2024-02-14', '09:00:00', '18:00:00', NULL, NULL);
 INSERT INTO `sistema_noleggio`.`turno_lavoro` (`impiegato`, `data`, `ora_inizio`, `ora_fine`, `ingresso`, `uscita`) VALUES ('CRBRRD15L41B205E', '2024-02-15', '09:00:00', '18:00:00', NULL, NULL);
 INSERT INTO `sistema_noleggio`.`turno_lavoro` (`impiegato`, `data`, `ora_inizio`, `ora_fine`, `ingresso`, `uscita`) VALUES ('CRBRRD15L41B205E', '2024-02-16', '09:00:00', '18:00:00', NULL, NULL);
@@ -1532,7 +1536,7 @@ INSERT INTO `sistema_noleggio`.`turno_lavoro` (`impiegato`, `data`, `ora_inizio`
 INSERT INTO `sistema_noleggio`.`turno_lavoro` (`impiegato`, `data`, `ora_inizio`, `ora_fine`, `ingresso`, `uscita`) VALUES ('CRNDYN01T01F109U', '2024-01-13', '09:00:00', '18:00:00', '08:52:11', '18:22:33');
 INSERT INTO `sistema_noleggio`.`turno_lavoro` (`impiegato`, `data`, `ora_inizio`, `ora_fine`, `ingresso`, `uscita`) VALUES ('CRNDYN01T01F109U', '2024-01-14', '09:00:00', '18:00:00', '08:45:27', '18:17:48');
 INSERT INTO `sistema_noleggio`.`turno_lavoro` (`impiegato`, `data`, `ora_inizio`, `ora_fine`, `ingresso`, `uscita`) VALUES ('CRNDYN01T01F109U', '2024-01-15', '09:00:00', '18:00:00', '09:20:50', '18:10:27');
-INSERT INTO `sistema_noleggio`.`turno_lavoro` (`impiegato`, `data`, `ora_inizio`, `ora_fine`, `ingresso`, `uscita`) VALUES ('CRNDYN01T01F109U', '2024-02-13', '09:00:00', '18:00:00', NULL, NULL);
+INSERT INTO `sistema_noleggio`.`turno_lavoro` (`impiegato`, `data`, `ora_inizio`, `ora_fine`, `ingresso`, `uscita`) VALUES ('CRNDYN01T01F109U', '2024-02-13', '09:00:00', '18:00:00', '08:57:13', '18:58:28');
 INSERT INTO `sistema_noleggio`.`turno_lavoro` (`impiegato`, `data`, `ora_inizio`, `ora_fine`, `ingresso`, `uscita`) VALUES ('CRNDYN01T01F109U', '2024-02-14', '09:00:00', '18:00:00', NULL, NULL);
 INSERT INTO `sistema_noleggio`.`turno_lavoro` (`impiegato`, `data`, `ora_inizio`, `ora_fine`, `ingresso`, `uscita`) VALUES ('CRNDYN01T01F109U', '2024-02-15', '09:00:00', '18:00:00', NULL, NULL);
 INSERT INTO `sistema_noleggio`.`turno_lavoro` (`impiegato`, `data`, `ora_inizio`, `ora_fine`, `ingresso`, `uscita`) VALUES ('CRNDYN01T01F109U', '2024-02-16', '09:00:00', '18:00:00', NULL, NULL);

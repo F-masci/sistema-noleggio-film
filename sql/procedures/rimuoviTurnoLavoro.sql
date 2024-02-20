@@ -16,6 +16,10 @@ begin
 
     start transaction;
 
+    if CAST(CONCAT(var_year, '-', LPAD(var_month, 2, '0'), '-01') as date) <= CURDATE() then
+        signal sqlstate '45000' set message_text = 'Il mese deve essere maggiore di quello odierno';
+    end if;
+
     SELECT count(*) FROM turno_iniziato WHERE extract(month from data) = var_month AND extract(year from data) = var_year AND impiegato = var_employee INTO var_check;
     if var_check > 0 then
         signal sqlstate '45000' set message_text = 'Turni di lavoro già iniziati';

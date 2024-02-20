@@ -6,9 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="c4e361a1-2ec8-45e0-a0af-0dfbecb777c4" name="Changes" comment="Completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SistemaNoleggioFilm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SistemaNoleggioFilm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/factory/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/bd/sistema/noleggio/factory/ConnectionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv/turno_lavoro.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/turno_lavoro.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/import/carica.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/import/cast_film.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/import/cellulare.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/import/cliente.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/import/copia_film.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/import/email.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/import/film.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/import/impiegato.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/import/login.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/import/noleggio.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/import/settore.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/import/telefono.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/import/turno_lavoro.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/procedures/rimuoviTurnoLavoro.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/procedures/rimuoviTurnoLavoro.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,46 +57,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.SistemaNoleggio.executor": "Run",
-    "Database Script.createFunctions.executor": "Run",
-    "Database Script.createProcedures.executor": "Run",
-    "Database Script.grantExecute.executor": "Run",
-    "Database Script.insertData.executor": "Run",
-    "Database Script.runAllConfig.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
-    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/OneDrive - Universita' degli Studi di Roma Tor Vergata/Università/Github/SistemaNoleggioFilm/relazione",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/OneDrive - Universita' degli Studi di Roma Tor Vergata/Università/Github/SistemaNoleggioFilm/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.31149426",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SistemaNoleggio.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.createFunctions.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.createProcedures.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.grantExecute.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.insertData.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.runAllConfig.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;false&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/OneDrive - Universita' degli Studi di Roma Tor Vergata/Università/Github/SistemaNoleggioFilm/relazione&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/OneDrive - Universita' degli Studi di Roma Tor Vergata/Università/Github/SistemaNoleggioFilm/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.31149426&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql",
-      "mariadb"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;,
+      &quot;mariadb&quot;
     ],
-    "RunConfigurationTargetLRU": [
-      "309ccba4-a859-4b5f-8670-6ca1d2acbb7c/schema/\"sistema_noleggio\"",
-      "309ccba4-a859-4b5f-8670-6ca1d2acbb7c"
+    &quot;RunConfigurationTargetLRU&quot;: [
+      &quot;309ccba4-a859-4b5f-8670-6ca1d2acbb7c/schema/\&quot;sistema_noleggio\&quot;&quot;,
+      &quot;309ccba4-a859-4b5f-8670-6ca1d2acbb7c&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="it.bd.sistema.noleggio.exception" />
@@ -152,7 +165,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.1-openjdk-21.0.1-249ae16d76d6-a618e4d4" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-f644763e9732-c0c073db" />
       </set>
     </attachedChunks>
   </component>
@@ -182,7 +195,8 @@
       <workItem from="1707772625657" duration="9392000" />
       <workItem from="1708184911802" duration="20339000" />
       <workItem from="1708280937802" duration="513000" />
-      <workItem from="1708368623970" duration="2554000" />
+      <workItem from="1708368623970" duration="3209000" />
+      <workItem from="1708390599824" duration="6236000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -272,7 +286,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708221778048</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Completed">
+      <option name="closed" value="true" />
+      <created>1708382074273</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1708382074273</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
