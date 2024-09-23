@@ -8,12 +8,12 @@ Questo repository contiene gli artefatti di un progetto per l'implementazione di
 
 ### Schema Concettuale
 
-![Schema Concettuale](relazione/Diagramma ER Concettuale.jpg)
+![Schema Concettuale](relazione/diagramma_ER_concettuale.jpg)
 
 Lo schema concettuale mostra le entità principali del database e le loro relazioni.
 
 ### Schema Logico
 
-![Schema Logico](relazione/Schema logico.png)
+![Schema Logico](relazione/schema_logico.png)
 
 Lo schema logico rappresenta la traduzione dello schema concettuale in una struttura relazionale.
